@@ -2,8 +2,8 @@
 
 
 **Alla esittelen:**
- - [Linkin profiiliini](https://github.com/NicklasHH/Linux-palvelimet/edit/master/eka.md#t%C3%A4ss%C3%A4-profiili)
- - [Kuvan profiilistani](https://github.com/NicklasHH/Linux-palvelimet/edit/master/eka.md#t%C3%A4ss%C3%A4-profiilista-kuva)
+ - Linkin profiiliini
+ - Kuvan profiilistani
 
 ## Tässä profiili
 Tästä pääsee katsomaan profiiliani-> [https://github.com/NicklasHH](https://github.com/NicklasHH)
