@@ -1,6 +1,7 @@
 # Eka tehtävä
 
-Alla esittelen linkit omaan profiiliini sekä lisätty kuva
+
+Alla esittelen linkit omaan profiiliini sekä lisätty kuva profiilista
 
 Tästä pääsee katsomaan profiiliani-> [https://github.com/NicklasHH](https://github.com/NicklasHH)
 
