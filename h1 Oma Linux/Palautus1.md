@@ -116,6 +116,9 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 6. Kirjaudutaan sisään ja kokeilaan, että resoluutiota voidaan vaihtaa vetämällä ikkunaa eri kokoiseksi
    ![Kuva 2.10](kuva2.10.png)
 
+
+---
+
 ## 3. Linuxin testailua
 
 1. Yksi hieno asia verrattuna windowsiin oli se, että kaiken saa päivitettyä kerralla komennolla:
@@ -126,8 +129,17 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 3. Terminaalin kautta saa luotua samalla tavalla kansioita kuin windowsissa, samaten pienellä testailulla liikkuminenkin onnistuu samoilla komennoilla.
    ![Kuva 3.3](kuva3.3.png)
 
+---
 
 ## Lähteet
-https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
-https://www.gnu.org/philosophy/free-sw.html  
+Tero Karvinen - Install Debian on Virtualbox - Updated 2023  
 https://terokarvinen.com/2021/install-debian-on-virtualbox/  
+
+Tero Karvinen - Raportin kirjoittaminen  
+https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
+
+Tero Karvinen - Linux Palvelimet 2024 alkukevät  
+https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/  
+
+What is Free Software?  
+https://www.gnu.org/philosophy/free-sw.html  
