@@ -6,7 +6,7 @@ Viikon tehtävinä oli lukea ja tiivistää kaksi artikkelia muutaman ranskalais
 
 ## 1. Artikkelit
 
-Artikkelit koskivat raportin kirjoittamista sekä Vapaata lähdekoodia liittyen annettuihin sivuihin.
+Artikkelit koskivat raportin kirjoittamista sekä Vapaata lähdekoodia liittyen annettuihin sivuihin.  
 Raportin kirjoittamiseta koskeva materiaali: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
 Vapaata lähdekoodia koskeva materiaali: https://www.gnu.org/philosophy/free-sw.html
 
