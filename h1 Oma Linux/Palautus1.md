@@ -17,11 +17,11 @@ Tärkeimmät asiat artikkelista olivat:
 - Raportinnissa kerrotaan tarkasti mitä tehdään ja mitä sen jälkeen tapahtuu
 - Suositeltua on kirjoittaa raporttia itse suorituksen yhteydessä
 - Raportin on oltava
-    - Toistettava - Samassa ympäristössä tulee sama lopputulos myös toisella käyttäjällä
-    - Täsmällinen - Tarkat ohjeet siitä, mitä on tehty
-    - Helppolukuinen - Hyvä ulkoasu, ei kirjoitusvirheitä
-    - Lähteet huomioiva - Jos haet tietoa, merkkaa lähteet
-    - Paikkaansa pitävä - Älä kerro tehneesi asioita, mitä et ole tehnyt
+  - Toistettava - Samassa ympäristössä tulee sama lopputulos myös toisella käyttäjällä
+  - Täsmällinen - Tarkat ohjeet siitä, mitä on tehty
+  - Helppolukuinen - Hyvä ulkoasu, ei kirjoitusvirheitä
+  - Lähteet huomioiva - Jos haet tietoa, merkkaa lähteet
+  - Paikkaansa pitävä - Älä kerro tehneesi asioita, mitä et ole tehnyt
 
 #### Vapaa lähdekoodi
 
@@ -56,7 +56,7 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 #### Tehdään uusi virtuaalikone
 
 1. käynnistetään virtual box  
-    ![kuva 2.2](kuva2.2.png)
+   ![kuva 2.2](kuva2.2.png)
 2. Painetaan painiketta `New`
 3. Valitaan avautuneeta valikosta `Expert Mode`
 4. Ikkunan `Name and Operating System` osiossa syötetään **Name**, **Folder**, **Type:Linux**, **Version: Debian(64-bit)**
@@ -116,7 +116,6 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 6. Kirjaudutaan sisään ja kokeilaan, että resoluutiota voidaan vaihtaa vetämällä ikkunaa eri kokoiseksi
    ![Kuva 2.10](kuva2.10.png)
 
-
 ---
 
 ## 3. Linuxin testailua
@@ -132,14 +131,15 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 ---
 
 ## Lähteet
-Tero Karvinen - Install Debian on Virtualbox - Updated 2023  
-https://terokarvinen.com/2021/install-debian-on-virtualbox/  
 
-Tero Karvinen - Raportin kirjoittaminen  
-https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
+Tero Karvinen - Install Debian on Virtualbox - Updated 2023  
+https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
 Tero Karvinen - Linux Palvelimet 2024 alkukevät  
-https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/  
+https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/
+
+Tero Karvinen - Raportin kirjoittaminen  
+https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
 
 What is Free Software?  
-https://www.gnu.org/philosophy/free-sw.html  
+https://www.gnu.org/philosophy/free-sw.html
