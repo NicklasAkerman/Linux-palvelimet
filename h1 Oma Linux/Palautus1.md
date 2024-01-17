@@ -64,6 +64,7 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 6. `Hardware` osiosta **Base memory: 4000MB**, **Processors: 2**
 7. `Hard Disk` osiosta valitaan **Create a Virtual Hard Disk Now**, asetetaan tallennustilan määräksi 40GB sekä **Hard Disk File Type and Variant** osion alasvetovalikosta valitaan **VDI (VirtualBox Disk Image)**
 8. Painetaan `Finish`
+
    ![Kuva 2.3](kuva2.3.png)
 9. Valitaan **DebianHH** aktiiviseksi ja painetaan **Settings**
 10. Avautuneesta ikkunasta valitaan **Storage** välilehti
