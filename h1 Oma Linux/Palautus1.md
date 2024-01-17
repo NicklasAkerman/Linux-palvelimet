@@ -7,7 +7,7 @@ Viikon tehtävinä oli lukea ja tiivistää kaksi artikkelia muutaman ranskalais
 ## 1. Artikkelit
 
 Artikkelit koskivat raportin kirjoittamista sekä Vapaata lähdekoodia liittyen annettuihin sivuihin.
-Raportin kirjoittamiseta koskeva materiaali: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+Raportin kirjoittamiseta koskeva materiaali: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
 Vapaata lähdekoodia koskeva materiaali: https://www.gnu.org/philosophy/free-sw.html
 
 #### Raportin kirjoitus
@@ -67,7 +67,7 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
    ![Kuva 2.3](kuva2.3.png)
 9. Valitaan **DebianHH** aktiiviseksi ja painetaan **Settings**
 10. Avautuneesta ikkunasta valitaan **Storage** välilehti
-11. Valitse **Controller: IDE** alapuolella oleva **Empty**
+11. Valitse **Controller: IDE** alapuolella oleva **Empty**  
     ![Kuva 2.4](kuva2.4.png)
 12. Paina **Attributes** osiosta oikealta pientä cd-levyn kuvaa ja valitse **Choose/Create a Virtual Optical Disk...**
 13. Avautuneesta valikosta paina **Add** ja etsitään aikaisemmin ladattu Debianin levykuva, painetaan levykuva tiedostoa ja painetaan **Open**, **Choose** ja **OK**
@@ -90,7 +90,7 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 5. Kun osio näyttää alla olevan kuvan mukaiselta(_ei välttämättä tarvitse painaa mitään_), painetaan **Next**
    ![Kuva 2.6](kuva2.6.png)
 6. Syötetään tiedot: **Oma nimi**, **Tunnuksen nimi**, **Tietokoneen nimi** sekä **Vahva salasana** ja painetaan **Next**
-7. Tarkistetaan yhteenvedosta tiedot ja painetaan **Install**. Jos et löydä painiketta, suurenna ikkuna oikeassa yläreunassa olevasta neliöstä, jolloin painike tulee näkyviin.
+7. Tarkistetaan yhteenvedosta tiedot ja painetaan **Install**. Jos et löydä painiketta, suurenna ikkuna oikeassa yläreunassa olevasta neliöstä, jolloin painike tulee näkyviin.  
    ![Kuva 2.7](kuva2.7.png)
 8. Odotellaan....järjstelmän.....asentumista...
 
@@ -128,6 +128,6 @@ Asennan Linuxin virtuaalikoneeseen ja ennestään koneella oli jo asennettuna vi
 
 
 ## Lähteet
-https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
-https://www.gnu.org/philosophy/free-sw.html
-https://terokarvinen.com/2021/install-debian-on-virtualbox/
+https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
+https://www.gnu.org/philosophy/free-sw.html  
+https://terokarvinen.com/2021/install-debian-on-virtualbox/  
