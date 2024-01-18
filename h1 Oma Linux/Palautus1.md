@@ -6,9 +6,9 @@ Viikon tehtävinä oli lukea ja tiivistää kaksi artikkelia muutaman ranskalais
 
 ## 1. Artikkelit
 
-Artikkelit koskivat raportin kirjoittamista sekä Vapaata lähdekoodia liittyen annettuihin sivuihin.  
+Artikkelit koskivat raportin kirjoittamista sekä Vapaata ohjelmistoa liittyen annettuihin sivuihin.  
 Raportin kirjoittamiseta koskeva materiaali: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
-Vapaata lähdekoodia koskeva materiaali: https://www.gnu.org/philosophy/free-sw.html
+Vapaata ohjelmistoa koskeva materiaali: https://www.gnu.org/philosophy/free-sw.html
 
 #### Raportin kirjoitus
 
@@ -23,12 +23,13 @@ Tärkeimmät asiat artikkelista olivat:
   - Lähteet huomioiva - Jos haet tietoa, merkkaa lähteet
   - Paikkaansa pitävä - Älä kerro tehneesi asioita, mitä et ole tehnyt
 
-#### Vapaa lähdekoodi
+#### Vapaa ohjelmisto
 
-Tärkeimmät asiat artikkelista olivat:
-
-- abc
-- abc
+Vapaa ohjelmisto pitää sisällään neljä olennaista asiaa, joista jokaisen kohdan pitää täyttyä:    
+- Voit käyttää ohjelmistoa, kuten itse halut. 
+- Vapaan ohjelmiston edellytys on se, että pääset käsiksi lähdekoodiin ja saat muuttaa ohjelmaa, kuten haluat. 
+- Saat jakaa ohjelmistoa vapaasti eteenpäin
+- Saat jakaa muokkaamaasi ohjelmistoa vapaasti eteenpäin
 
 ---
 
