@@ -12,8 +12,8 @@ Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioo
 - g) [Aiheuttaa lokiin tapahtumat onnistuneesta ja epäonnistuneesta/kielletystä toimenpiteestä](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#g-lokitapahtumat)
 <br/> 
 Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:  
-- [Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#fyysinen-tietokone)
-- [Kuvailen alkutilanteen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#alku)
+- [Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#fyysinen-tietokone)  
+- [Kuvailen alkutilanteen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#alku)  
 
 Osion lähteet: (Karvinen 2024.)
 
