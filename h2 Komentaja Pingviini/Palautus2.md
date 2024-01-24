@@ -1,15 +1,15 @@
 # Viikon 2 palautus
 
-Viikon tehtävinä oli:
+Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioon tässä dokumentissa.
 
 - x) [lukea ja tiivistää artikkeli muutaman ranskalaisen viivan avulla liittyen Linuxin komentoihin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#x-artikkeli)
-- a) Asentaa micro-editori
-- b) Listata testaamani koneen rauta
-- c) Asentaa kolme komentoriviohjelmaa
-- d) Esitellä tehtävänannossa määritellyt kansiot
-- e) Kuvata muutamalla kuvalla grep komennon käyttöä
-- f) Näyttää esimerkki putkista
-- g) Aiheuttaa lokiin tapahtumat onnistuneesta ja epäonnistuneesta/kielletystä toimenpiteestä
+- a) [Asentaa micro-editori](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#a-micro-editori)
+- b) [Listata testaamani koneen rauta](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#b-testikoneen-rauta)
+- c) [Asentaa kolme komentoriviohjelmaa](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#c-komentoriviohjelmat)
+- d) [Esitellä tehtävänannossa määritellyt kansiot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#d-kansioiden-esittely)
+- e) [Kuvata muutamalla kuvalla grep komennon käyttöä](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#e-grep--komennon-k%C3%A4ytt%C3%B6esimerkit)
+- f) [Näyttää esimerkki putkista](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#f-putket)
+- g) [Aiheuttaa lokiin tapahtumat onnistuneesta ja epäonnistuneesta/kielletystä toimenpiteestä](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#g-lokitapahtumat)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -89,6 +89,7 @@ Ajamalla komennon: `man lshw` sain esille manuaalin joka kertoi, että lshw on t
 
 **-short** = Manuaalin mukaan -short komento tulostaa lyhyen laitepuun, joka näyttää laitteiston polut.  
 ![kuva b3](b3.png)
+
 **-sanitize** = Manuaalin mukaan -sanitize komento poistaa mahdolliset arkaluontoista tietoa sisältävät tulosteet, kunte IP-osoitteet ja sarjanumerot.  
 ![kuva b4](b4.png)
 
