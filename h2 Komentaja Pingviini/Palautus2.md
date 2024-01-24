@@ -2,7 +2,7 @@
 
 Viikon tehtävinä oli:
 
-- x) lukea ja tiivistää artikkeli muutaman ranskalaisen viivan avulla liittyen Linuxin komentoihin.
+- x) [lukea ja tiivistää artikkeli muutaman ranskalaisen viivan avulla liittyen Linuxin komentoihin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#x-artikkeli)
 - a) Asentaa micro-editori
 - b) Listata testaamani koneen rauta
 - c) Asentaa kolme komentoriviohjelmaa
