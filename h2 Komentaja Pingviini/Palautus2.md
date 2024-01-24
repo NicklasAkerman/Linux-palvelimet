@@ -299,4 +299,3 @@ Screenath 2023. Micro: Making File Editing Easier in Linux Terminal. Luettavissa
 Singh, G. 2023. 15 Fun Linux Command Line Programs to Spice Up Your Terminal. Luettavissa: https://medium.com/@gurpreet.singh_89/15-fun-linux-command-line-programs-to-spice-up-your-terminal-abf30af73de1. Luettu: 24.1.2024.
 
 Watkins, D. 2021. 3 interesting ways to use the Linux cowsay command. Luettavissa: https://opensource.com/article/21/11/linux-cowsay-command. Luettu: 24.1.2024.
-
