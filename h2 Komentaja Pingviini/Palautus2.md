@@ -1,4 +1,4 @@
-# Viikon 2 palautuss
+# Viikon 2 palautus
 
 Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioon tässä dokumentissa.
 
