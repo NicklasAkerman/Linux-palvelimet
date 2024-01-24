@@ -245,7 +245,7 @@ Viesti 1.
 5. `TTY=pts/0` = *Ei tietoa*
 6. `PWD=/home/nicklashh` = Mistä hakemistosta komento annettiin
 7. `USER=root` = Käyttöoikeudet
-8. `COMMAND=/usr/bin/journalctl` = *Mahdollisesti suoritettu komento/ohjelma*
+8. `COMMAND=/usr/bin/journalctl` = Suoritettu komento/ohjelma
 
 Viesti 2.
 1. `tammi 24 16:43:47` = Tapahtuma-aika
@@ -264,19 +264,21 @@ kirjoitin komennon `sudo journalctl` ja annoin väärän salasanan, jolloin logi
 3. `sudo[5311]: pam_unix(sudo:auth): authentication failure;` = Autentikointi ei mennyt läpi
 4. `logname=` = *Ei tietoa*
 5. `uid=1000` = user id
-5. `euid=0` = Effective User Identifer
+5. `euid=0` = Effective User Identifer (Määrittää käyttäjän oikeudet tehtäväkohtaisesti.)
 6. `tty=/dev/pts/0` = *Ei tietoa*
-7. `ruser=nicklashh` = Real User Identifer
+7. `ruser=nicklashh` = Real User id (Todellinen käyttäjätunnus)
 8. `rhost=` = Remote host
 9. `user=nicklashh` = Käyttäjä
 
-Osion lähteet: (Mckay 2023.)
+Osion lähteet: (Baeldung 2022, Geeksforgeeks 2021, Mckay 2023, )
 
 ---
 
 ## Lähteet
 
-Baeldung 2022. What Do Identifiers Mean in Linux?: https://www.baeldung.com/linux/identifiersl. Luettu: 24.1.2024.
+Baeldung 2022. What Do Identifiers Mean in Linux?: https://www.baeldung.com/linux/identifiers. Luettu: 24.1.2024.
+
+Geeksforgeeks 2021. Real, Effective and Saved UserID in Linux. Luettavissa: https://www.geeksforgeeks.org/real-effective-and-saved-userid-in-linux/. Luettu: 24.1.2024.
 
 Geeksforgeeks 2023. Piping in Unix or Linux. Luettavissa: https://www.geeksforgeeks.org/piping-in-unix-or-linux/. Luettu: 24.1.2024.
 
