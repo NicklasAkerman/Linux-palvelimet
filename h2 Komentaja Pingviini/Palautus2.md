@@ -1,4 +1,4 @@
-# Viikon 2 palautus
+# Viikon 2 palautuss
 
 Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioon tässä dokumentissa.
 
@@ -11,9 +11,10 @@ Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioo
 - f) [Näyttää esimerkki putkista](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#f-putket)
 - g) [Aiheuttaa lokiin tapahtumat onnistuneesta ja epäonnistuneesta/kielletystä toimenpiteestä](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#g-lokitapahtumat)<br><br>
 
-Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:  
-- [Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#fyysinen-tietokone)  
-- [Kuvailen alkutilanteen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#alku)  
+Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:
+
+- [Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#fyysinen-tietokone)
+- [Kuvailen alkutilanteen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#alku)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -234,46 +235,53 @@ Osion lähteet: (Geeksforgeeks 2023.)
 Komennolla `man journalctl` sain selville, että journalctl mahdollistaa tapahtumalokien tarkastelun. Kun komento on `journalctl -f` näyttää loki viimeisimmät tapahtumat. Tässä osiossa oli suuria vaikeuksia selvittää tiettyjen osioiden tarkoitus ja osan tarkoitus jäikin pimentoon.
 
 #### Onnistunut tapahtuma
+
 kirjoitin komennon `sudo journalctl` ja annoin oikean salasanan, jolloin logiin tuli seuraavat viestit:
->Viesti 1.
->`tammi 24 16:43:47 virtuaalitehopc sudo[5311]: nicklashh : TTY=pts/0 ; PWD=/home/nicklashh ; USER=root ; COMMAND=/usr/bin/journalctl`
->  
->Viesti 2.
->`tammi 24 16:43:47 virtuaalitehopc sudo[5311]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)`
+
+> Viesti 1.
+> `tammi 24 16:43:47 virtuaalitehopc sudo[5311]: nicklashh : TTY=pts/0 ; PWD=/home/nicklashh ; USER=root ; COMMAND=/usr/bin/journalctl`
+>
+> Viesti 2.
+> `tammi 24 16:43:47 virtuaalitehopc sudo[5311]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)`
 
 ##### Viestin analysointi
+
 Viesti 1.
+
 1. `tammi 24 16:43:47` = Tapahtuma-aika
 2. `virtuaalitehopc` = Tietokoneen nimi
 3. `sudo[5311]` = sudo komento ja prosessin ID
 4. `nicklashh` = Komennon antaja
-5. `TTY=pts/0` = *Ei tietoa*
+5. `TTY=pts/0` = _Ei tietoa_
 6. `PWD=/home/nicklashh` = Mistä hakemistosta komento annettiin
 7. `USER=root` = Käyttöoikeudet
 8. `COMMAND=/usr/bin/journalctl` = Suoritettu komento/ohjelma
 
 Viesti 2.
+
 1. `tammi 24 16:43:47` = Tapahtuma-aika
 2. `virtuaalitehopc` = Tietokoneen nimi
 3. `sudo[5311]` = sudo komento ja prosessin ID
 4. `pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)` = Uusi istunto avattu käyttäjänumerolle 0 käyttäjänumeron 1000 toimesta
 
 #### Epäonnistunut tapahtuma
+
 kirjoitin komennon `sudo journalctl` ja annoin väärän salasanan, jolloin logiin tuli seuraava virheviesti:
 
->`tammi 24 16:41:44 virtuaalitehopc sudo[5311]: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=nicklashh rhost=  user=nicklashh`
+> `tammi 24 16:41:44 virtuaalitehopc sudo[5311]: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=nicklashh rhost=  user=nicklashh`
 
 ##### Viestin analysointi
+
 1. `tammi 24 16:41:44` = Tapahtuma-aika
 2. `virtuaalitehopc` = Tietokoneen nimi
 3. `sudo[5311]: pam_unix(sudo:auth): authentication failure;` = Autentikointi ei mennyt läpi
-4. `logname=` = *Ei tietoa*
+4. `logname=` = _Ei tietoa_
 5. `uid=1000` = user id
-5. `euid=0` = Effective User Identifer (Määrittää käyttäjän oikeudet tehtäväkohtaisesti.)
-6. `tty=/dev/pts/0` = *Ei tietoa*
-7. `ruser=nicklashh` = Real User id (Todellinen käyttäjätunnus)
-8. `rhost=` = Remote host
-9. `user=nicklashh` = Käyttäjä
+6. `euid=0` = Effective User Identifer (Määrittää käyttäjän oikeudet tehtäväkohtaisesti.)
+7. `tty=/dev/pts/0` = _Ei tietoa_
+8. `ruser=nicklashh` = Real User id (Todellinen käyttäjätunnus)
+9. `rhost=` = Remote host
+10. `user=nicklashh` = Käyttäjä
 
 Osion lähteet: (Baeldung 2022, Geeksforgeeks 2021, Mckay 2023, )
 
