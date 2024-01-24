@@ -161,22 +161,22 @@ Osion lähteet: (Rehman 2023.)
 
 Tässä osiossa näytän kuvankaappauksin, kuinka käyn jokaisessa kansiossa, jotka on kuvattu Teron `Command Line Basics Revisited` sivuston `Important directories" osiossa`. En aivan ymmärtänyt tehtävänantoa, joten kuvankaappauksesta selviää aina lähtötilanne, sekä kuinka kansioon on päästy ja mitä kansio sisältää.
 
-1. Kansio: `/` ja sen sisältö:
+1. Kansio: `/` ja sen sisältö:  
    ![kuva d1](d1.png)
 
-2. Kansio: `/home/` ja sen sisältö:
+2. Kansio: `/home/` ja sen sisältö:  
    ![kuva d2](d2.png)
 
-3. Kansio: `/home/nicklashh/` ja sen sisältö:
+3. Kansio: `/home/nicklashh/` ja sen sisältö:  
    ![kuva d3](d3.png)
 
-4. Kansio: `/etc/` ja sen sisältö:
+4. Kansio: `/etc/` ja sen sisältö:  
    ![kuva d4](d4.png)
 
-5. Kansio: `/media/` ja sen sisältö:
+5. Kansio: `/media/` ja sen sisältö:  
    ![kuva d5](d5.png)
 
-6. Kansio: `/var/log/` ja sen sisältö:
+6. Kansio: `/var/log/` ja sen sisältö:  
    ![kuva d6](d6.png)
 
 Osion lähteet: (Karvinen 2020.)
