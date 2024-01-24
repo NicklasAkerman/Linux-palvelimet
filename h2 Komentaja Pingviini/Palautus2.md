@@ -10,6 +10,8 @@ Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioo
 - e) [Kuvata muutamalla kuvalla grep komennon käyttöä](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#e-grep--komennon-k%C3%A4ytt%C3%B6esimerkit)
 - f) [Näyttää esimerkki putkista](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#f-putket)
 - g) [Aiheuttaa lokiin tapahtumat onnistuneesta ja epäonnistuneesta/kielletystä toimenpiteestä](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#g-lokitapahtumat)
+
+  Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:
 - [Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#fyysinen-tietokone)
 - [Kuvailen alkutilanteen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h2%20Komentaja%20Pingviini/Palautus2.md#alku)
 
