@@ -190,7 +190,7 @@ Osion tarkoituksena on hankkia Githubin education paketti, joka lähtee liikkeel
 3. Valitsin `Student` ja vieritin alareunaan jossa painoin `Continue`(Minulla oli valmiiksi koulun sähköposti ja koulu asetettuna)
 4. Latasin pakin kautta opiskelutodistus englanniksi
 5. Latasin opiskelutodistuksesta otetun kuvan
-6. Odotellaan, kunnes tulee vastaus sähköpostiin.  
+6. Odotellaan, kunnes tulee vastaus sähköpostiin. Tämä osio tuli valmiiksi 31.1.2024 kello 14.10.  
    ![m1](m1.png)
 
 Osion lähteet: (Github 2024.)
