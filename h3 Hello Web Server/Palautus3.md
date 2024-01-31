@@ -144,10 +144,10 @@ Osion lähteet: (Karvinen 2018.)
 
 Osiossa C tein jo HTML5 sivun sen ollessa tuttua, joten voidaan varmistaa sen validius antamalla tehty koodi W3 validatoriin.  
 ![d1](d1.png)
-<br>
+<br><br>
 Tästä huomataan, että html tagista puuttuu sulku, joten korjataan se, sekä html tagin sisään lang="fi", jolloin saadaan myös varoitus pois.  
 ![d2](d2.png)
-<br>
+<br><br>
 
 Lisäsin vielä sivustolle hieman muotoilua, jonka jälkeen vielä tarkistin W3 validaattorilla, ettei virheitä tule ja tässä lopputulos sivusta:  
 ![d3](d3.png)
