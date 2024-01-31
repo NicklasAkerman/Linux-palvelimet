@@ -121,10 +121,10 @@ Osion lähteet: (Karvinen 2018, Fitzpatrick 2020.)
 
 1. Aloitan luomalla kansioon `/home/nicklashh/publicsites` uuden kansion komennolla `mkdir hattu.example.com` ja teen sinne index.html tiedoston `micro hattu.example.com/index.html`
 
-2. Kirjoitin index.html tiedostoon seuraavan tekstin, joka ottaa käyttöön html5, asettaa sivuston otsikoksi "Hattusivu" ja ottaa käyttöön utf-8. Lisäksi tässä on määritelty Body, minkä sisään tulee H1 otsikko sekä teksti.
+2. Kirjoitin index.html tiedostoon seuraavan tekstin, joka ottaa käyttöön html5, asettaa sivuston otsikoksi "Hattusivu" ja ottaa käyttöön utf-8. Lisäksi tässä on määritelty Body, minkä sisään tulee H1 otsikko sekä teksti.  
    ![c1](c1.png)
 
-3. Siirryin komennolla `cd /etc/apache2/sites-available/` oikeaan polkuun, jonne kirjoitin komennon `sudoedit /etc/apache2/sites-available/hattu.example.com.conf` ja kirjoitin seuraavat:
+3. Siirryin komennolla `cd /etc/apache2/sites-available/` oikeaan polkuun, jonne kirjoitin komennon `sudoedit /etc/apache2/sites-available/hattu.example.com.conf` ja kirjoitin seuraavat:  
    ![c2](c2.png)
 
 4. Seuraavaksi kirjoitin polussa `/etc/apache2/sites-available` tunnilta tutut komennot:
@@ -133,7 +133,7 @@ Osion lähteet: (Karvinen 2018, Fitzpatrick 2020.)
 - sudo a2dissite testi.example.com
 - sudo systemctl restart apache2
 
-5. Tarkistetaan muutokset selaimella:
+5. Tarkistetaan muutokset selaimella:  
    ![c3](c3.png)
 
 Osion lähteet: (Karvinen 2018.)
@@ -142,14 +142,14 @@ Osion lähteet: (Karvinen 2018.)
 
 ## e) Validi HTML5 sivu
 
-Osiossa C tein jo HTML5 sivun sen ollessa tuttua, joten voidaan varmistaa sen validius antamalla tehty koodi W3 validatoriin.
+Osiossa C tein jo HTML5 sivun sen ollessa tuttua, joten voidaan varmistaa sen validius antamalla tehty koodi W3 validatoriin.  
 ![d1](d1.png)
 <br>
-Tästä huomataan, että html tagista puuttuu sulku, joten korjataan se, sekä html tagin sisään lang="fi", jolloin saadaan myös varoitus pois.
+Tästä huomataan, että html tagista puuttuu sulku, joten korjataan se, sekä html tagin sisään lang="fi", jolloin saadaan myös varoitus pois.  
 ![d2](d2.png)
 <br>
 
-Lisäsin vielä sivustolle hieman muotoilua, jonka jälkeen vielä tarkistin W3 validaattorilla, ettei virheitä tule ja tässä lopputulos sivusta:
+Lisäsin vielä sivustolle hieman muotoilua, jonka jälkeen vielä tarkistin W3 validaattorilla, ettei virheitä tule ja tässä lopputulos sivusta:  
 ![d3](d3.png)
 
 Osion lähteet: (W3.)
