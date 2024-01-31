@@ -1,6 +1,6 @@
 # Viikon 3 palautus
 
-Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioon tässä dokumentissa.
+Koska viikon tehtävissä kaikki komennot tapahtuivat heti ja mitään ei latailtu tai odoteltu, ei tähän dokumenttiin ole merkitty kellonaikoja. Kokonaisuudessaan kaikki tehtävät on tehty 31.1.2024 aikavälillä 09.00-15.00. Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioon tässä dokumentissa.
 
 - x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen Apacheen.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#x-apache-artikkelit)
 - a)[ Testata, että weppipalvelin vastaa localhost-osoitteesta.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#a-weppipalvelimen-testaus)
