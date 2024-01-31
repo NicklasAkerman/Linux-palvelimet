@@ -210,11 +210,7 @@ Tein molemmat tehtävät samaan aikaan soveltaen Teron ohjeita artikkelista "Nam
 4. Viimeisenä vaiheena tuli muokata /etc/hosts tiedostoa komennolla `sudoedit /etc/hosts` niin, että sinne lisättiin sekä paita.example.com sekä hattu.example.com.  
    ![n+o3](n+o3.png)
 
-5. Testataan että seuraavat sivut toimivat
-
-- localhost
-- hattu.example.com
-- paita.example.com
+5. Testataan että seuraavat sivut toimivat: localhost, hattu.example.com ja paita.example.com  
   ![n+o4](n+o4.png)
 
 Osion lähteet: (Karvinen 2018)
