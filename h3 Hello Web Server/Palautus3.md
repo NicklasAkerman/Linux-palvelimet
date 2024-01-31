@@ -2,20 +2,20 @@
 
 Alla on kerrottu viikon tehtävät. Ne toimivat samalla linkkinä kyseisen osioon tässä dokumentissa.
 
-- x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen Apacheen.]()
-- a)[ Testata, että weppipalvelin vastaa localhost-osoitteesta.]()
-- b)[ Etsiä ja analysoida lokista rivit, jotka syntyvät kun palvelimelta ladataan sivu.]()
-- c)[ Tehdä uusi etusivu.]()
-- e)[ Tehdä validi HTML5 sivu.]()
-- f)[ Curl komentojen esimerkit]()
-- m)[ Hankkia GitHub Education -paketti.]()
-- n)[ Tehdä Apachelle nimipohjainen virtuaalipalvelu]()
-- o)[ Laittaa sama tietokone vastaamaan kahdelta eri sivulta kahdesta eri nimestä.]() <br><br>
+- x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen Apacheen.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#x-apache-artikkelit)
+- a)[ Testata, että weppipalvelin vastaa localhost-osoitteesta.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#a-weppipalvelimen-testaus)
+- b)[ Etsiä ja analysoida lokista rivit, jotka syntyvät kun palvelimelta ladataan sivu.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#b-lokien-analysointi)
+- c)[ Tehdä uusi etusivu.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#c-uusi-etusivu)
+- e)[ Tehdä validi HTML5 sivu.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#e-validi-html5-sivu)
+- f)[ Curl komentojen esimerkit](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#f-curl--komennot)
+- m)[ Hankkia GitHub Education -paketti.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#m-github-education--paketin-hankinta)
+- n)[ Tehdä Apachelle nimipohjainen virtuaalipalvelu](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#n--o-apachen-nimipohjainen-virtuaalipalvelu)
+- o)[ Laittaa sama tietokone vastaamaan kahdelta eri sivulta kahdesta eri nimestä.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#n--o-apachen-nimipohjainen-virtuaalipalvelu) <br><br>
 
 Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:
 
-- [Fyysisen koneen tiedot]()
-- [Kuvailen alkutilanteen]()
+- [Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#fyysinen-tietokone)
+- [Kuvailen alkutilanteen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h3%20Hello%20Web%20Server/Palautus3.md#alku)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -87,7 +87,7 @@ Osion lähteet: (Apache 2023, Karvinen 2018.)
 
 Tunnilla asennettiin jo Apachen palvelin, joten täsä osiossa vain testataan, että se vastaa localhost osoitteesta. Tässä huomio, että koska käytössä on portti 80, tulee osoite olla muotoa `http://localhost/`, eli S otetaan pois http osasta, joka sinne automaattisesti usein tulee.
 
-![a1](a1.png)
+   ![a1](a1.png)
 
 Näin on testattu, että localhost vastaa ja Apachen palvelin on asennettu onnistuneesti.
 
@@ -145,16 +145,16 @@ Osion lähteet: (Karvinen 2018.)
 
 Osiossa C tein jo HTML5 sivun sen ollessa tuttua, joten voidaan varmistaa sen validius antamalla tehty koodi W3 validatoriin.
 
-![d1](d1.png)
+   ![d1](d1.png)
 <br>
 Tästä huomataan, että html tagista puuttuu sulku, joten korjataan se, sekä html tagin sisään lang="fi", jolloin saadaan myös varoitus pois.
 
-![d2](d2.png)
+   ![d2](d2.png)
 <br>
 
 Lisäsin vielä sivustolle hieman muotoilua, jonka jälkeen vielä tarkistin W3 validaattorilla, ettei virheitä tule ja tässä lopputulos sivusta:
 
-![d3](d3.png)
+   ![d3](d3.png)
 
 Osion lähteet: (W3.)
 
@@ -164,11 +164,11 @@ Osion lähteet: (W3.)
 
 #### curl
 Komento `curl [url]` palauttaa oman manuaalinsa mukaan ilman lisäkomentoja verkkosivulta saadun datan/html sivun. Tässä esimerkissä käytetty komentoa `curl localhost`
-![f1](f1.png)
+   ![f1](f1.png)
 
 #### curl -I
 Komento `curl -I [url]` tekee vain HEAD pyynnön, eli palautuksena tulee sivuston kaikki Headerit.
-![f2](f2.png)
+   ![f2](f2.png)
 
 - **Date** = Sisältää viestin alkuperäisajankohdan ja -päivämäärän
 - **Server** = Sisältää tiedot siitä ohjelmistosta, jota alkuperäispalvelin käyttää pyynnön käsittelyyn
@@ -193,7 +193,7 @@ Osion tarkoituksena on hankkia Githubin education paketti, joka lähtee liikkeel
 4. Latasin pakin kautta opiskelutodistus englanniksi
 5. Latasin opiskelutodistuksesta otetun kuvan 
 6. Odotellaan, kunnes tulee vastaus sähköpostiin.
-![m1](m1.png)
+   ![m1](m1.png)
 
 
 Osion lähteet: (Github 2024.)
@@ -205,19 +205,19 @@ Tein molemmat tehtävät samaan aikaan soveltaen Teron ohjeita artikkelista "Nam
 
 1. Polussa `/home/nicklashh/publicsites` tein uuden kansion komennolla `mkdir paita.example.com` 
 2. Tein tiedoston komennolla `micro paita.example.com/index.html` ja kopioin sinne lähes saman tekstin kuin aikaisemmin tehty index.html hattu osiossa:
-![n+o1](n+o1.png)
+   ![n+o1](n+o1.png)
 3. Komennolla `sudoedit /etc/apache2/sites-available/paita.example.com.conf` tehtiin uusi konfiguraatio paita sivustoa varten ja kun tiedosto oli valmis ja suljettu, otettiin se aktiiviseksi komennolla `sudo a2ensite paita.example.com` ja käynnistettiin Apache uusiksi komennolla `sudo systemctl restart apache2`
-![n+o2](n+o2.png)
+   ![n+o2](n+o2.png)
 
 4. Viimeisenä vaiheena tuli muokata /etc/hosts tiedostoa komennolla `sudoedit /etc/hosts` niin, että sinne lisättiin sekä paita.example.com sekä hattu.example.com.
-![n+o3](n+o3.png)
+   ![n+o3](n+o3.png)
 
 5. Testataan että seuraavat sivut toimivat
 - localhost
 - hattu.example.com
 - paita.example.com
 
-![n+o4](n+o4.png)
+   ![n+o4](n+o4.png)
 
 
 Osion lähteet: (Karvinen 2018)
