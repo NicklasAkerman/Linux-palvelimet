@@ -191,7 +191,11 @@ Osion tarkoituksena on hankkia Githubin education paketti, joka lähtee liikkeel
 4. Latasin pakin kautta opiskelutodistus englanniksi
 5. Latasin opiskelutodistuksesta otetun kuvan
 6. Odotellaan, kunnes tulee vastaus sähköpostiin. Tämä osio tuli valmiiksi 31.1.2024 kello 14.10.  
-   ![m1](m1.png)
+   ![m1](m1.png)  
+
+Edit 3.2.2024 kello 15.15 tuli viesti, että hakemus on hyväksytty.  
+   ![m2](m2.png) 
+
 
 Osion lähteet: (Github 2024.)
 
