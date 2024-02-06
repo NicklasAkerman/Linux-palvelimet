@@ -58,7 +58,7 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 
 ## x) Pilvipalvelinartikkelit
 
-#### Lehdon artikkelin tiivistys
+### Lehdon artikkelin tiivistys
 Tässä osiossa on tarkoitus tiivistää Lehdon artikkelista seuraavat osiot:
 - **a) Pilvipalvelimen vuokraus ja asennus**
     - Osiossa käydään läpi, kuinka hyödynnetään githubin education pakettia.
@@ -80,7 +80,7 @@ Artikkeli on hyvin selkeä ja kuvaava varsinkin tilanteissa, joissa homma ei men
 
 Osion lähteet: (Lehto 2022)
 
-#### Karvisen artikkelin tiivistys
+### Karvisen artikkelin tiivistys
 Tero karvisen artikkeli kuinka tehdään:
 
 - käyttöönotettuun virtuaalipalvelimen palomuuriin reikä
