@@ -92,14 +92,12 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 2. Ensimmäiseksi kirjaudutaan sisään Root käyttäjänä aikaisemmin tehdylle palvelimelle ssh komennolla `ssh root@IP` jossa IP on edellisen osion viimeisessä vaiheessa talteen otettu ipv4 osoite.
 
 3. Sain virheen, joten arvelin, että ssh pitää asentaa.
-
    > bash: ssh: command not found
 
 4. Googlen avulla sain asennus ohjeet ja kirjoitin seuraavat komennot. (Gite 2023.)
-
-   > sudo apt-get update
-   > sudo apt-get install openssh-server
-   > sudo systemctl start ssh
+   > sudo apt-get update  
+   > sudo apt-get install openssh-server  
+   > sudo systemctl start ssh  
 
 5. Uusi kirjautumis yritys komennolla `ssh root@178.128.246.214` joka onnistui:  
    ![kuva b1](b1.png)  
@@ -113,8 +111,8 @@ Kun SSH yhteys saatiin muodostettua, oli aika laittaa palomuuri päälle.
 1. Ohjeistuksen mukaan ensimmäisenä tein palomuuriin reiän komennolla: `sudo ufw allow 22/tcp`, mutta sieltä tuli alla oleva virhe, joka johtuu siitä, ettei sitä ollut asennettu.
    > sudo: ufw: command not found
 2. Palomuurin asennus on ohi muutamassa sekunnissa, jonka jälkeen tein aikaisemmin yritetyn reiän palomuuriin ja lopuksi palomuuri päälle:
-   > sudo apt-get install ufw
-   > sudo ufw allow 22/tcp
+   > sudo apt-get install ufw  
+   > sudo ufw allow 22/tcp  
    > sudo ufw enable  
    > ![kuva b2](b2.png)  
 
