@@ -86,10 +86,10 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 
 ## b) Virtuaalipalvelimen alkutoimet
 Osio sisältää:
-- [SSH etäyhteyden muodostaminen]()
-- [Palomuurin asennus]()
-- [Root-tunnuksen sulkeminen]()
-- [Palvelimen ohjelmien päivitys]()
+- [SSH etäyhteyden muodostaminen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#ssh-et%C3%A4yhteyden-muodostaminen)
+- [Palomuurin asennus](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#palomuuri)
+- [Root-tunnuksen sulkeminen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#root-tunnus-kiinni)
+- [Palvelimen ohjelmien päivitys](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#palvelimen-ohjelmien-p%C3%A4ivitys)
 
 ### SSH etäyhteyden muodostaminen
 
