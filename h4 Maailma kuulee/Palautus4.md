@@ -168,16 +168,22 @@ Osion lähteet: (Karvinen 2017)
 4. Testasin oman tietokoneen selaimella:
    ![kuva c1](c1.png)  
 
-5. Etusivun vaihtaminen tapahtui komennolla:
-  > echo Testing.. |sudo tee /var/www/html/index.html
+5. Etusivun vaihtaminen tapahtui komennolla: `echo Testing.. |sudo tee /var/www/html/index.html`
 
 6. Testasin omalla koneella:
-   ![kuva c2](c2.png)  
+   ![kuva c2](c2.png)
+
+Osion lähteet: (Lehto 2023)
 
 #### Palvelimen ohjelmien päivitys
-Palvelimen ohjelmat päivitin jo aikaisemmin, kun kokeilin, että luodun tunnuksen sudo oikeudet toimivat. Asensin kuitenkin vielä micro editorin komennolla: `sudo apt install micro`
+Palvelimen ohjelmat päivitin seuraavilla komennoilla:
+  `sudo apt-get update`  
+  `sudo apt-get upgrade`  
+  `sudo apt-get dist-upgrade`  
 
+Asensin vielä micro editorin komennolla: `sudo apt install micro`
 
+Osion lähteet: (Lehto 2023)
 ## d) Domainin vuokraus
 
 Vuokrasin domainin [Namecheapin](www.namecheap.com) kautta heti tunnin jälkeen, koska sieltä sattui löytymään omalle sukunimelle .com päätteinen domain. Tässä osiossa käydään siis vain asetukset läpi, eikä itse domainin ostoon liittyviä toimenpiteitä.
