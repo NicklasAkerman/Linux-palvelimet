@@ -59,8 +59,38 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 ## x) Pilvipalvelinartikkelit
 
 #### Lehdon artikkelin tiivistys
+Tässä osiossa on tarkoitus tiivistää Lehdon artikkelista seuraavat osiot:
+- **a) Pilvipalvelimen vuokraus ja asennus**
+    - Osiossa käydään läpi, kuinka hyödynnetään githubin education pakettia.
+    - Osiossa on todella yksityiskohtaiset vaiheet, kuinka virtuaalikone tehdään kyiseiseen DigitalOcean palveluun ja mitä missäkin kohdassa tulisi tehdä.
+    - Artikkelissa kuvaillaan myös hyvin tarkkaan, kuinka otetaan nimipalvelin käyttöön namecheapin kautta.
+    - Namecheapin asetukset käydään myös läpi hyvin kuvattuna, joten tämän ohjeen avulla saa suoritettua tehtävät helposti.
+- **d) Palvelin suojaan palomuurilla**
+    - Artikkelissa käydään läpi, kuinka otetaan SSH yhteys juuri luotuun virtuaalipalvelimeen
+    - Lisäksi läpi käydään palomuurin käyttö sekä rei’itys kattavasti.
+    - Jokainen komento on selitetty hyvin ja lisäksi kuvankaappaukset terminaalin tuloksesta auttavat varmasti, jos tulee ongelmia eteen.
+- **e) Kotisivut palvelimelle**
+    - Artikkeli tarjoaa yksityiskohtaiset ja vaiheittaiset ohjeistukset, kuinka virtuaalikoneelle saadaan asennettua apachen palvelin.
+    -  Tässä osiossa on myös käyty läpi, kuinka tehdään uusi käyttäjätunnus ja kuinka saadaan sille sudo oikeudet.
+    - Lopussa käydään läpi, kuinka root oikeudet lukitaan.
+- **f) Palvelimen ohjelmien päivitys**
+    - Palvelimen ohjelmien päivitys on käyty läpi yksinkertaisimmalla ja selkeimmällä mahdollisella tavalla: On listattu kolme komentoa, joilla se tehdään sekä kuvankaappaus terminaalista.
 
-- abc
+Artikkeli on hyvin selkeä ja kuvaava varsinkin tilanteissa, joissa homma ei mene putkeen. Itse enemmän tykkään lyhyistä (kuten alla Teron artikkeli) ohjeista, mutta varmasti vikatilanteen yllättäessä, olisi tästä enempi hyötyä.
+
+Osion lähteet: (Lehto 2022)
+
+#### Karvisen artikkelin tiivistys
+Tero karvisen artikkeli kuinka tehdään:
+
+- käyttöönotettuun virtuaalipalvelimen palomuuriin reikä
+- käyttäjä ja kuinka sille annetaan sudo oikeudet
+- sulketaan root käyttäjä
+- päivitetään ohjelmistot
+
+Lisäksi artikkelissa käydään alussa hyvin nopeasti läpi, kuinka DigitalOceanissa otetaan käyttöön Ubuntu 16.04.LTS ja artikkelin lopussa käydään läpi nopeasti, kuinka DNS nimi otetaan käyttöön.
+
+Osion lähteet: (Karvinen 2017)
 
 ## a) Pilvipalvelimen vuokraus
 
