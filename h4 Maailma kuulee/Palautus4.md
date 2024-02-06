@@ -2,17 +2,17 @@
 
 Viikon 4 tehtävät olivat seuraavat:
 
-- x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen pilvipalvelimiin.]()
-- a)[ Vuokrata oma virtuaalipalvelin.]()
-- b)[ Tehdä alkutoimet virtuaalipalvelimelle ]()
+- x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen pilvipalvelimiin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#x-pilvipalvelinartikkelit)
+- a)[ Vuokrata oma virtuaalipalvelin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#a-pilvipalvelimen-vuokraus)
+- b)[ Tehdä alkutoimet virtuaalipalvelimelle.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#b-virtuaalipalvelimen-alkutoimet)
 - c)[ Asentaa weppipalvelin virtuaalipalvelimelle.]()
-- d)[ Vuokrata domain]()
+- d)[ Vuokrata domain ja saada se osoittamaan pilvipalvelimeen.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#d-domainin-vuokraus-ja-sen-osoittaminen-virtuaalipalvelimeen)
 
 Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:
 
-- [ Fyysisen koneen tiedot]()
-- [ Virtuaalikoneen tiedot]()
-- [ Alkutilanteen kuvaus]()
+- [ Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#fyysinen-tietokone)
+- [ Virtuaalikoneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#virtuaalikone)
+- [ Alkutilanteen kuvaus](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#alku)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -134,7 +134,7 @@ Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
 
 Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.
 ![kuva b5](b5.png)  
- ![kuva b6](b6.png)  
+ ![kuva b6](b6.png)
 
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin:
 
@@ -153,11 +153,11 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
    > sudo service ssh restart
 
 7. Suljin terminaalin ja yritin kirjautua rootilla:
-   ![kuva b7](b7.png)  
+   ![kuva b7](b7.png)
 
 Osion lähteet: (Karvinen 2017)
 
-#### Kotisivut palvelimelle
+## c) Kotisivut palvelimelle
 
 1. Homma alkoi komennolla `sudo apt-get install apache2` jotta apache saadaan asennettua
 
@@ -166,12 +166,12 @@ Osion lähteet: (Karvinen 2017)
 3. Lisäsin palomuuriin reiän komennolla `sudo ufw allow 80/tcp`
 
 4. Testasin oman tietokoneen selaimella:
-   ![kuva c1](c1.png)  
+   ![kuva c1](c1.png)
 
 5. Etusivun vaihtaminen tapahtui komennolla: `echo Testing.. |sudo tee /var/www/html/index.html`
 
 6. Testasin omalla koneella:
-   ![kuva c2](c2.png)  
+   ![kuva c2](c2.png)
 
 Osion lähteet: (Lehto 2022)
 
@@ -195,13 +195,10 @@ Vuokrasin domainin [Namecheapin](www.namecheap.com) kautta heti tunnin jälkeen,
 3. Valitaan välilehti `Advanced DNS`
 4. Klikataan `ADD NEW RECORD`
 5. Lisäsin IP osoitteet, lisäsin TTL sarakkeeseen 5 min ja painoin vihreää hyväksy nappia.
-   ![kuva d1](d1.png)  
+   ![kuva d1](d1.png)
 
 6. Selaimella testaamaan osoitetta www.åkerman.com
-   ![kuva d2](d2.png)  
-
-
-Riippuen omasta ajasta, tulen mahdollisesti päivittämään sivua hiukan, joten sen ulkoasu saattaa erota tässä nähdystä.  
+   ![kuva d2](d2.png)
 
 Osion lähteet: (Lehto 2022)
 
