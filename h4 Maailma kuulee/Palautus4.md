@@ -102,7 +102,7 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
    > sudo systemctl start ssh
 
 5. Uusi kirjautumis yritys komennolla `ssh root@178.128.246.214` joka onnistui:
-   ![kuva d1](d1.png)  
+   ![kuva b1](b1.png)  
    Osion lähteet: (Karvinen 2017, Gite 2023.)
 
 #### Palomuuri
@@ -115,7 +115,7 @@ Kun SSH yhteys saatiin muodostettua, oli aika laittaa palomuuri päälle.
    > sudo apt-get install ufw
    > sudo ufw allow 22/tcp
    > sudo ufw enable  
-   > ![kuva d2](d2.png)
+   > ![kuva b2](b2.png)
 
 Osion lähteet: (Karvinen 2017)
 
@@ -125,16 +125,16 @@ Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
 
 1. Komennolla `sudo adduser nicklas` tein tunnuksen, jonka jälkeen syötin tunnukselle **vahva** salasanan.(Muita tietoja ei tarvita)
 2. Komennolla `sudo adduser nicklas sudo` lisäsin tunnukseen sudo oikeidet. Tässä kohtaa huomasin jonkinlaisen perl: warning: osion, joka täytyy myöhemmin selvittää.
-   ![kuva d3](d3.png)
+   ![kuva b3](b3.png)
 3. Kokeilin juuri luodulla tunnuksella kirjautumista toisessa terminaalissa. `ssh nicklas@178.128.246.214`
-   ![kuva d4](d4.png)
+   ![kuva b4](b4.png)
 4. Testasin tunnuksen sudo-oikeuksien toiminnan ajamalla alla olevat:
    > sudo apt-get update
    > sudo apt-get -y dist-upgrade
 
 Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.
-![kuva d5](d5.png)  
- ![kuva d6](d6.png)
+![kuva b5](b5.png)  
+ ![kuva b6](b6.png)  
 
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin:
 
@@ -153,7 +153,7 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
    > sudo service ssh restart
 
 7. Suljin terminaalin ja yritin kirjautua rootilla:
-   ![kuva d7](d7.png)
+   ![kuva b7](b7.png)  
 
 Osion lähteet: (Karvinen 2017)
 
@@ -171,24 +171,39 @@ Osion lähteet: (Karvinen 2017)
 5. Etusivun vaihtaminen tapahtui komennolla: `echo Testing.. |sudo tee /var/www/html/index.html`
 
 6. Testasin omalla koneella:
-   ![kuva c2](c2.png)
+   ![kuva c2](c2.png)  
 
-Osion lähteet: (Lehto 2023)
+Osion lähteet: (Lehto 2022)
 
 #### Palvelimen ohjelmien päivitys
+
 Palvelimen ohjelmat päivitin seuraavilla komennoilla:
-  `sudo apt-get update`  
-  `sudo apt-get upgrade`  
-  `sudo apt-get dist-upgrade`  
+`sudo apt-get update`  
+ `sudo apt-get upgrade`  
+ `sudo apt-get dist-upgrade`
 
 Asensin vielä micro editorin komennolla: `sudo apt install micro`
 
-Osion lähteet: (Lehto 2023)
-## d) Domainin vuokraus
+Osion lähteet: (Lehto 2022)
+
+## d) Domainin vuokraus ja sen osoittaminen virtuaalipalvelimeen
 
 Vuokrasin domainin [Namecheapin](www.namecheap.com) kautta heti tunnin jälkeen, koska sieltä sattui löytymään omalle sukunimelle .com päätteinen domain. Tässä osiossa käydään siis vain asetukset läpi, eikä itse domainin ostoon liittyviä toimenpiteitä.
 
-Osion lähteet: ()
+1. Namecheappiin kirjautumisen jälkeen vasemmalta valitaan `Domain List`
+2. Domainin nimen kohdalla painetaan `MANAGE`
+3. Valitaan välilehti `Advanced DNS`
+4. Klikataan `ADD NEW RECORD`
+5. Lisäsin IP osoitteet, lisäsin TTL sarakkeeseen 5 min ja painoin vihreää hyväksy nappia.
+   ![kuva d1](d1.png)  
+
+6. Selaimella testaamaan osoitetta www.åkerman.com
+   ![kuva d2](d2.png)  
+
+
+Riippuen omasta ajasta, tulen mahdollisesti päivittämään sivua hiukan, joten sen ulkoasu saattaa erota tässä nähdystä.  
+
+Osion lähteet: (Lehto 2022)
 
 ---
 
