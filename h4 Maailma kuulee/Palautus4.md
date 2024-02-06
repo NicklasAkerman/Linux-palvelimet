@@ -88,7 +88,7 @@ Tero karvisen artikkeli kuinka tehdään:
 - sulketaan root käyttäjä
 - päivitetään ohjelmistot
 
-Lisäksi artikkelissa käydään alussa hyvin nopeasti läpi, kuinka DigitalOceanissa otetaan käyttöön Ubuntu 16.04.LTS ja artikkelin lopussa käydään läpi nopeasti, kuinka DNS nimi otetaan käyttöön.
+Lisäksi artikkelissa käydään alussa hyvin nopeasti läpi, kuinka DigitalOceanissa otetaan käyttöön Ubuntu 16.04.LTS ja artikkelin lopussa käydään läpi nopeasti, kuinka DNS nimi otetaan käyttöön. Mielestäni artikkeli oli riittävä viikon tehtävien tekoa varten ja antoi kivasti haastetta suorittaa tehtävät vain tämän ohjeen avulla, koska joutui itse miettimään jonkin verran, mitä täytyy tehdä.
 
 Osion lähteet: (Karvinen 2017)
 
