@@ -133,8 +133,8 @@ Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
 4. Testasin tunnuksen sudo-oikeuksien toiminnan ajamalla komennot `sudo apt-get update` ja `sudo apt-get -y dist-upgrade`
 
 Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.  
-![kuva b5](b5.png)  
-![kuva b6](b6.png)  
+  ![kuva b5](b5.png)  
+  ![kuva b6](b6.png)  
 
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin komennolla: `sudo usermod --lock root`
 
