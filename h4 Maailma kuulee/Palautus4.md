@@ -125,35 +125,26 @@ Osion lähteet: (Karvinen 2017)
 Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
 
 1. Komennolla `sudo adduser nicklas` tein tunnuksen, jonka jälkeen syötin tunnukselle **vahva** salasanan.(Muita tietoja ei tarvita)
+
 2. Komennolla `sudo adduser nicklas sudo` lisäsin tunnukseen sudo oikeidet. Tässä kohtaa huomasin jonkinlaisen perl: warning: osion, joka täytyy myöhemmin selvittää.
-   ![kuva b3](b3.png)
+   ![kuva b3](b3.png)  
+
 3. Kokeilin juuri luodulla tunnuksella kirjautumista toisessa terminaalissa. `ssh nicklas@178.128.246.214`
-   ![kuva b4](b4.png)
-4. Testasin tunnuksen sudo-oikeuksien toiminnan ajamalla alla olevat:
-   > sudo apt-get update
-   > sudo apt-get -y dist-upgrade
+   ![kuva b4](b4.png)  
+
+4. Testasin tunnuksen sudo-oikeuksien toiminnan ajamalla komennot `sudo apt-get update` ja `sudo apt-get -y dist-upgrade`
 
 Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.  
 ![kuva b5](b5.png)  
 ![kuva b6](b6.png)  
 
-5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin:
+5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin komennolla: `sudo usermod --lock root`
 
-   > sudo usermod --lock root
+6. Disabloin SSH root login mahdollisuuden komennolla: `sudoedit /etc/ssh/sshd_config` niin, että avautuneessa tiedostossa vaihdoin `PermitRootLogin` osion **no** ja tallensin tiedoston.
 
-6. Lisäksi disabloin SSH root login mahdollisuuden:
+7. Viimeisenä vaiheena SSH restart komennolla: `sudo service ssh restart`
 
-   > sudoedit /etc/ssh/sshd_config
-
-   Avautuneessa tiedostossa vaihdoin alla olevan osion ja tallensin.
-
-   > PermitRootLogin **no**
-
-   SSH restart viimeisenä vaiheena.
-
-   > sudo service ssh restart
-
-7. Suljin terminaalin ja yritin kirjautua rootilla:  
+8. Suljin terminaalin ja yritin kirjautua rootilla:  
    ![kuva b7](b7.png)  
 
 Osion lähteet: (Karvinen 2017)
