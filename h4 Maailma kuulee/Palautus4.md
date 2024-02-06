@@ -157,7 +157,7 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
 
 Osion lähteet: (Karvinen 2017)
 
-## c) Kotisivut palvelimelle
+#### Kotisivut palvelimelle
 
 1. Homma alkoi komennolla `sudo apt-get install apache2` jotta apache saadaan asennettua
 
@@ -174,8 +174,8 @@ Osion lähteet: (Karvinen 2017)
 6. Testasin omalla koneella:
    ![kuva c2](c2.png)  
 
-## d) Palvelimen ohjelmien päivitys
-Palvelimen ohjelmat päivitin jo aikaisemmin, kun kokeilin, että luodun tunnuksen sudo oikeudet toimivat.
+#### Palvelimen ohjelmien päivitys
+Palvelimen ohjelmat päivitin jo aikaisemmin, kun kokeilin, että luodun tunnuksen sudo oikeudet toimivat. Asensin kuitenkin vielä micro editorin komennolla: `sudo apt install micro`
 
 
 ## d) Domainin vuokraus
