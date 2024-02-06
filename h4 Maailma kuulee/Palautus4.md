@@ -5,7 +5,7 @@ Viikon 4 tehtävät olivat seuraavat:
 - x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen pilvipalvelimiin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#x-pilvipalvelinartikkelit)
 - a)[ Vuokrata oma virtuaalipalvelin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#a-pilvipalvelimen-vuokraus)
 - b)[ Tehdä alkutoimet virtuaalipalvelimelle.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#b-virtuaalipalvelimen-alkutoimet)
-- c)[ Asentaa weppipalvelin virtuaalipalvelimelle.]()
+- c)[ Asentaa weppipalvelin virtuaalipalvelimelle.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#d-domainin-vuokraus-ja-sen-osoittaminen-virtuaalipalvelimeen)
 - d)[ Vuokrata domain ja saada se osoittamaan pilvipalvelimeen.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#d-domainin-vuokraus-ja-sen-osoittaminen-virtuaalipalvelimeen)
 
 Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:
@@ -52,7 +52,7 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 2. Käynnistin terminaalin vasemmasta yläreunasta painamalla `Applications` -> `Terminal Emulator`
 3. Syötin terminaaliin komennon: `sudo apt-get update` ja annoin salasanan.
 4. Muutaman sekunnin päästä terminaaliin tuli teksti `Reading package lists... Done`  
-   ![Alku1](alku1.png)
+   ![Alku1](alku1.png)  
 
 ---
 
@@ -68,19 +68,19 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
   Aloitin homman menemällä githubin [education sivulle](https://education.github.com/pack) josta huomasin, että kun kirjaudun githubin tunnuksella DigitalOcean palveluun, saan sinne 200$ arvosta credittejä. Vahvistin sähköpostiosoitteen ja täytin maksu- ja osoitetiedot [Digital Oceanin sivuille](https://www.digitalocean.com/) ja seuraavaksi päästään itse pilvipalvelimen vuokraukseen ja asennukseen.
 
 1. Kirjauduttuani sisään, valitsin `Deploy a virtual machine`  
-   ![Kuva a1](a1.png)
+   ![Kuva a1](a1.png)  
 
 2. Seuraavaksi valitsin, mistä maasta haluan palvelimen vuokrata ja tässä tapauksessa valitsin `Amsterdamin`, koska se oli lähimpänä omaa sijaintiani.
 
 3. Seuraava osio, mitä muutin oli käyttöjärjestelmän valintaosio, missä valitsin `Debian` ja versioksi `12 x64`
 
-4. `CPU Options` osion valinnat:
-   ![Kuva a2](a2.png)
+4. `CPU Options` osion valinnat:  
+   ![Kuva a2](a2.png)  
 
 5. Seuraavaksi lisättiin Rootin salasana(HUOM! Salasanan tulee olla erittäin vahva!)
 
-6. Seuraavaksi vaihdettiin Hostname osioon nimi jonka jälkeen painetaan `Create Droplet`
-   ![Kuva a3](a3.png)
+6. Seuraavaksi vaihdettiin Hostname osioon nimi jonka jälkeen painetaan `Create Droplet`  
+   ![Kuva a3](a3.png)  
 
 7. Sivusto vaihtui ja muutaman sekuntin ajan virtuaalipalvelinta rakennettiin, jonka jälkeen painetaan virtuaalipalvelimen nimeä ja otetaan talteen ipv4 osoite.
 
@@ -101,9 +101,10 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
    > sudo apt-get install openssh-server
    > sudo systemctl start ssh
 
-5. Uusi kirjautumis yritys komennolla `ssh root@178.128.246.214` joka onnistui:
+5. Uusi kirjautumis yritys komennolla `ssh root@178.128.246.214` joka onnistui:  
    ![kuva b1](b1.png)  
-   Osion lähteet: (Karvinen 2017, Gite 2023.)
+
+Osion lähteet: (Karvinen 2017, Gite 2023.)
 
 #### Palomuuri
 
@@ -115,7 +116,7 @@ Kun SSH yhteys saatiin muodostettua, oli aika laittaa palomuuri päälle.
    > sudo apt-get install ufw
    > sudo ufw allow 22/tcp
    > sudo ufw enable  
-   > ![kuva b2](b2.png)
+   > ![kuva b2](b2.png)  
 
 Osion lähteet: (Karvinen 2017)
 
@@ -132,9 +133,9 @@ Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
    > sudo apt-get update
    > sudo apt-get -y dist-upgrade
 
-Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.
+Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.  
 ![kuva b5](b5.png)  
- ![kuva b6](b6.png)
+![kuva b6](b6.png)  
 
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin:
 
@@ -152,8 +153,8 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
 
    > sudo service ssh restart
 
-7. Suljin terminaalin ja yritin kirjautua rootilla:
-   ![kuva b7](b7.png)
+7. Suljin terminaalin ja yritin kirjautua rootilla:  
+   ![kuva b7](b7.png)  
 
 Osion lähteet: (Karvinen 2017)
 
@@ -165,13 +166,13 @@ Osion lähteet: (Karvinen 2017)
 
 3. Lisäsin palomuuriin reiän komennolla `sudo ufw allow 80/tcp`
 
-4. Testasin oman tietokoneen selaimella:
-   ![kuva c1](c1.png)
+4. Testasin oman tietokoneen selaimella:  
+   ![kuva c1](c1.png)  
 
 5. Etusivun vaihtaminen tapahtui komennolla: `echo Testing.. |sudo tee /var/www/html/index.html`
 
-6. Testasin omalla koneella:
-   ![kuva c2](c2.png)
+6. Testasin omalla koneella:  
+   ![kuva c2](c2.png)  
 
 Osion lähteet: (Lehto 2022)
 
@@ -194,11 +195,11 @@ Vuokrasin domainin [Namecheapin](www.namecheap.com) kautta heti tunnin jälkeen,
 2. Domainin nimen kohdalla painetaan `MANAGE`
 3. Valitaan välilehti `Advanced DNS`
 4. Klikataan `ADD NEW RECORD`
-5. Lisäsin IP osoitteet, lisäsin TTL sarakkeeseen 5 min ja painoin vihreää hyväksy nappia.
-   ![kuva d1](d1.png)
+5. Lisäsin IP osoitteet, lisäsin TTL sarakkeeseen 5 min ja painoin vihreää hyväksy nappia.  
+   ![kuva d1](d1.png)  
 
-6. Selaimella testaamaan osoitetta www.åkerman.com
-   ![kuva d2](d2.png)
+6. Selaimella testaamaan osoitetta www.åkerman.com  
+   ![kuva d2](d2.png)  
 
 Osion lähteet: (Lehto 2022)
 
