@@ -85,8 +85,13 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 7. Sivusto vaihtui ja muutaman sekuntin ajan virtuaalipalvelinta rakennettiin, jonka jälkeen painetaan virtuaalipalvelimen nimeä ja otetaan talteen ipv4 osoite.
 
 ## b) Virtuaalipalvelimen alkutoimet
+Osio sisältää:
+- [SSH etäyhteyden muodostaminen]()
+- [Palomuurin asennus]()
+- [Root-tunnuksen sulkeminen]()
+- [Palvelimen ohjelmien päivitys]()
 
-#### SSH etäyhteyden muodostaminen
+### SSH etäyhteyden muodostaminen
 
 1. Avataan virtuaalikoneen debian ja terminaali.
 2. Ensimmäiseksi kirjaudutaan sisään Root käyttäjänä aikaisemmin tehdylle palvelimelle ssh komennolla `ssh root@IP` jossa IP on edellisen osion viimeisessä vaiheessa talteen otettu ipv4 osoite.
@@ -104,7 +109,7 @@ Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pari
 
 Osion lähteet: (Karvinen 2017, Gite 2023.)
 
-#### Palomuuri
+### Palomuuri
 
 Kun SSH yhteys saatiin muodostettua, oli aika laittaa palomuuri päälle.
 
@@ -118,7 +123,7 @@ Kun SSH yhteys saatiin muodostettua, oli aika laittaa palomuuri päälle.
 
 Osion lähteet: (Karvinen 2017)
 
-#### Root-tunnus kiinni
+### Root-tunnus kiinni
 
 Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
 
@@ -138,7 +143,7 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
 
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin komennolla: `sudo usermod --lock root`
 
-6. Disabloin SSH root login mahdollisuuden komennolla: `sudoedit /etc/ssh/sshd_config` niin, että avautuneessa tiedostossa vaihdoin `PermitRootLogin` osion **no** ja tallensin tiedoston.
+6. Disabloin SSH root login mahdollisuuden komennolla: `sudoedit /etc/ssh/sshd_config` niin, että avautuneessa tiedostossa vaihdoin `PermitRootLogin` osioon **no** ja tallensin tiedoston.
 
 7. Viimeisenä vaiheena SSH restart komennolla: `sudo service ssh restart`
 
@@ -146,6 +151,17 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
    ![kuva b7](b7.png)  
 
 Osion lähteet: (Karvinen 2017)
+
+### Palvelimen ohjelmien päivitys
+
+Palvelimen ohjelmat päivitin seuraavilla komennoilla:
+`sudo apt-get update`  
+ `sudo apt-get upgrade`  
+ `sudo apt-get dist-upgrade`
+
+Asensin vielä micro editorin komennolla: `sudo apt install micro`
+
+Osion lähteet: (Lehto 2022)
 
 ## c) Kotisivut palvelimelle
 
@@ -165,16 +181,6 @@ Osion lähteet: (Karvinen 2017)
 
 Osion lähteet: (Lehto 2022)
 
-#### Palvelimen ohjelmien päivitys
-
-Palvelimen ohjelmat päivitin seuraavilla komennoilla:
-`sudo apt-get update`  
- `sudo apt-get upgrade`  
- `sudo apt-get dist-upgrade`
-
-Asensin vielä micro editorin komennolla: `sudo apt install micro`
-
-Osion lähteet: (Lehto 2022)
 
 ## d) Domainin vuokraus ja sen osoittaminen virtuaalipalvelimeen
 
