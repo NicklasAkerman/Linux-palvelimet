@@ -159,33 +159,24 @@ Osion lähteet: (Karvinen 2017)
 
 ## c) Kotisivut palvelimelle
 
-- abc
+1. Homma alkoi komennolla `sudo apt-get install apache2` jotta apache saadaan asennettua
+
+2. Testasin komennolla `curl 178.128.246.214` lähtikö apache pyörimään.
+
+3. Lisäsin palomuuriin reiän komennolla `sudo ufw allow 80/tcp`
+
+4. Testasin oman tietokoneen selaimella:
+   ![kuva c1](c1.png)  
+
+5. Etusivun vaihtaminen tapahtui komennolla:
+  > echo Testing.. |sudo tee /var/www/html/index.html
+
+6. Testasin omalla koneella:
+   ![kuva c2](c2.png)  
 
 ## d) Palvelimen ohjelmien päivitys
+Palvelimen ohjelmat päivitin jo aikaisemmin, kun kokeilin, että luodun tunnuksen sudo oikeudet toimivat.
 
-- abc
-
-## Karvisen artikkelin tiivistys
-
-Osion lähteet: (Lehto 2022, Karvinen 2017.)
-
----
-
-## b) Virtuaalipalvelimen alkutoimet
-
-Osio sisältää seuraavat toimet: Tulimuuri päälle, root-tunnus kiinni sekä ohjelmien päivitys.
-
-Osion lähteet: ()
-
----
-
-## c) Weppipalvelimen asennus virtuaalipalvelimelle
-
-Tässä osiossa asennetaan weppipalvelin aiemmin hankitulle virtuaalipalvelimelle, korvataan vakiona oleva testisivu ja testataan myös, että sivu näkyy julkisesti.
-
-Osion lähteet: ()
-
----
 
 ## d) Domainin vuokraus
 
