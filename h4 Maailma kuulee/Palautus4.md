@@ -97,8 +97,7 @@ Aloitin homman menemällä githubin [education sivulle](https://education.github
     > sudo systemctl start ssh
 
 5. Uusi kirjautumis yritys komennolla `ssh root@178.128.246.214` joka onnistui:
-  ![kuva d1](d1.png)
-
+  ![kuva d1](d1.png)  
 Osion lähteet: (Karvinen 2017, Gite 2023.)
 
 
@@ -111,7 +110,7 @@ Kun SSH yhteys saatiin muodostettua, oli aika laittaa palomuuri päälle.
     >sudo apt-get install ufw 
     >sudo ufw allow 22/tcp
     >sudo ufw enable  
-  ![kuva d2](d2.png)
+  ![kuva d2](d2.png)  
 
 Osion lähteet: (Karvinen 2017)
 
@@ -120,16 +119,16 @@ Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
 
 1. Komennolla `sudo adduser nicklas` tein tunnuksen, jonka jälkeen syötin tunnukselle **vahva** salasanan.(Muita tietoja ei tarvita)
 2. Komennolla `sudo adduser nicklas sudo` lisäsin tunnukseen sudo oikeidet. Tässä kohtaa huomasin jonkinlaisen perl: warning: osion, joka täytyy myöhemmin selvittää.
-  ![kuva d3](d3.png)
+  ![kuva d3](d3.png)  
 3. Kokeilin juuri luodulla tunnuksella kirjautumista toisessa terminaalissa. `ssh nicklas@178.128.246.214`
-    ![kuva d4](d4.png)
+    ![kuva d4](d4.png)  
 4. Testasin tunnuksen sudo-oikeuksien toiminnan ajamalla alla olevat:
   >sudo apt-get update
   >sudo apt-get -y dist-upgrade
   
   Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska hommat toimivat. Pitää myös tästä kysyä myöhemmin opettajalta.
-  ![kuva d5](d5.png)
-  ![kuva d6](d6.png)
+  ![kuva d5](d5.png)  
+  ![kuva d6](d6.png)  
   
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin:
     > sudo usermod --lock root
@@ -144,7 +143,7 @@ Seuraavaksi tein uuden käyttäjän jonka jälkeen suljin root-tunnuksen.
     > sudo service ssh restart
 
 7. Suljin terminaalin ja yritin kirjautua rootilla:
-   ![kuva d7](d7.png)
+   ![kuva d7](d7.png)  
 
 Osion lähteet: (Karvinen 2017)
 
