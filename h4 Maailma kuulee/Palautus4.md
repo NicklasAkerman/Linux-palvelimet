@@ -1,6 +1,6 @@
 # Viikon 4 palautus
 
-Viikon 4 tehtävät olivat seuraavat:
+Tällä viikolla muutamassa osiossa on erikseen huomioituna kellonaika, jotta saadaan käsitys siitä, kuinka kauan tapahtuma vei. Suurimmaksi osaksi tapahtumat ovat tässä osiossa kuitenkin tapahtuneet heti, jolloin tapahtuman kestoja on voitu kuvata myös suuripiirteittäin. Viikon 4 tehtävät olivat seuraavat:
 
 - x)[ Lukea ja tiivistää muutamien ranskalaisten viivojen avulla kaksi artikkelia liittyen pilvipalvelimiin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#x-pilvipalvelinartikkelit)
 - a)[ Vuokrata oma virtuaalipalvelin.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#a-pilvipalvelimen-vuokraus)
