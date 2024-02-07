@@ -8,11 +8,10 @@ Viikon 4 tehtävät olivat seuraavat:
 - c)[ Asentaa weppipalvelin virtuaalipalvelimelle.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#d-domainin-vuokraus-ja-sen-osoittaminen-virtuaalipalvelimeen)
 - d)[ Vuokrata domain ja saada se osoittamaan pilvipalvelimeen.](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#d-domainin-vuokraus-ja-sen-osoittaminen-virtuaalipalvelimeen)
 
-Lisäksi alla vielä suorat linkit fyysisen koneen tietoihin sekä alkutilanteen kuvaukseen:
+Lisäksi alla vielä suorat linkit fyysisen sekä virtuaalikoneen tietoihin:
 
 - [ Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#fyysinen-tietokone)
 - [ Virtuaalikoneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#virtuaalikone)
-- [ Alkutilanteen kuvaus](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#alku)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -44,17 +43,6 @@ Virtuaalikoneen tiedot:
 
 ---
 
-## Alku
-
-Ennen kuin siirryin alempana olevien asennuksien, toimintojen ja tehtävien pariin, suoritin seuraavat vaiheet:
-
-1. Käynnistin virtuaalikoneen
-2. Käynnistin terminaalin vasemmasta yläreunasta painamalla `Applications` -> `Terminal Emulator`
-3. Syötin terminaaliin komennon: `sudo apt-get update` ja annoin salasanan.
-4. Muutaman sekunnin päästä terminaaliin tuli teksti `Reading package lists... Done`  
-   ![Alku1](alku1.png)  
-
----
 
 ## x) Pilvipalvelinartikkelit
 
@@ -125,7 +113,7 @@ Osio sisältää:
 
 ### SSH etäyhteyden muodostaminen
 
-1. Avataan virtuaalikoneen debian ja terminaali.
+1. Avataan paikallisen virtuaalikoneen debian ja terminaali.
 2. Ensimmäiseksi kirjaudutaan sisään Root käyttäjänä aikaisemmin tehdylle palvelimelle ssh komennolla `ssh root@IP` jossa IP on edellisen osion viimeisessä vaiheessa talteen otettu ipv4 osoite.
 
 3. Sain virheen, joten arvelin, että ssh pitää asentaa.
@@ -220,14 +208,14 @@ Osion lähteet: (Lehto 2022)
 
 Vuokrasin domainin [Namecheapin](www.namecheap.com) kautta heti tunnin jälkeen, koska sieltä sattui löytymään omalle sukunimelle .com päätteinen domain. Tässä osiossa käydään siis vain asetukset läpi, eikä itse domainin ostoon liittyviä toimenpiteitä.
 
-1. Namecheappiin kirjautumisen jälkeen vasemmalta valitaan `Domain List`
-2. Domainin nimen kohdalla painetaan `MANAGE`
-3. Valitaan välilehti `Advanced DNS`
-4. Klikataan `ADD NEW RECORD`
+1. Namecheappiin kirjautumisen jälkeen vasemmalta valitsin `Domain List`
+2. Domainin nimen kohdalla painoin `MANAGE`
+3. Valitsin välilehden `Advanced DNS`
+4. Klikkasin `ADD NEW RECORD`
 5. Lisäsin IP osoitteet, lisäsin TTL sarakkeeseen 5 min ja painoin vihreää hyväksy nappia.  
    ![kuva d1](d1.png)  
 
-6. Selaimella testaamaan osoitetta www.åkerman.com  
+6. Testain selaimella osoitetta www.åkerman.com  
    ![kuva d2](d2.png)  
 
 Osion lähteet: (Lehto 2022)
