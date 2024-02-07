@@ -188,8 +188,8 @@ Osion lähteet: (Karvinen 2017)
 
 ### Palvelimen ohjelmien päivitys
 
-Palvelimen ohjelmat päivitin seuraavilla komennoilla:
-`sudo apt-get update`  
+Palvelimen ohjelmat päivitin seuraavilla komennoilla:  
+ `sudo apt-get update`  
  `sudo apt-get upgrade`  
  `sudo apt-get dist-upgrade`
 
