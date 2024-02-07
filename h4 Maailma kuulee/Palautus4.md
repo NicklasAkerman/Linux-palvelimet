@@ -176,7 +176,7 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin komennolla: `sudo usermod --lock root`
 
 6. Disabloin SSH root login mahdollisuuden komennolla: `sudoedit /etc/ssh/sshd_config` niin, että avautuneessa tiedostossa vaihdoin `PermitRootLogin` osioon `no` ja tallensin tiedoston.  
-   ![kuva b7](b7.png)  
+   ![kuva b7.1](b7.1.png)  
 
 
 7. Viimeisenä vaiheena SSH restart komennolla: `sudo service ssh restart`
