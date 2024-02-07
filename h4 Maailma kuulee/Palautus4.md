@@ -80,6 +80,8 @@ Lisäksi artikkelissa käydään alussa hyvin nopeasti läpi, kuinka DigitalOcea
 
 Osion lähteet: (Karvinen 2017)
 
+---
+
 ## a) Pilvipalvelimen vuokraus
 
 Aloitin homman menemällä githubin [education sivulle](https://education.github.com/pack) josta huomasin, että kun kirjaudun githubin tunnuksella DigitalOcean palveluun, saan sinne 200$ arvosta credittejä. Vahvistin sähköpostiosoitteen ja täytin maksu- ja osoitetiedot [Digital Oceanin sivuille](https://www.digitalocean.com/) ja seuraavaksi päästään itse pilvipalvelimen vuokraukseen ja asennukseen.
@@ -103,6 +105,8 @@ Aloitin homman menemällä githubin [education sivulle](https://education.github
 
 
 Osion lähteet: (Lehto 2022)
+
+---
 
 ## b) Virtuaalipalvelimen alkutoimet
 Osio sisältää:
@@ -203,6 +207,7 @@ Osion lähteet: (Lehto 2022)
 
 Osion lähteet: (Lehto 2022)
 
+---
 
 ## d) Domainin vuokraus ja sen osoittaminen virtuaalipalvelimeen
 
