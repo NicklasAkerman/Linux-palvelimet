@@ -113,6 +113,9 @@ Aloitin homman menemällä githubin [education sivulle](https://education.github
 
 7. Sivusto vaihtui ja muutaman sekuntin ajan virtuaalipalvelinta rakennettiin, jonka jälkeen painetaan virtuaalipalvelimen nimeä ja otetaan talteen ipv4 osoite.
 
+
+Osion lähteet: (Lehto 2022)
+
 ## b) Virtuaalipalvelimen alkutoimet
 Osio sisältää:
 - [SSH etäyhteyden muodostaminen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h4%20Maailma%20kuulee/Palautus4.md#ssh-et%C3%A4yhteyden-muodostaminen)
@@ -172,7 +175,7 @@ Nämä komennot toivat uusia tuttavuuksia, joille en tehnyt mitään, koska homm
 
 5. Kun luodun tunnuksen sudo oikeudet on varmistettu, lukitsin rootin komennolla: `sudo usermod --lock root`
 
-6. Disabloin SSH root login mahdollisuuden komennolla: `sudoedit /etc/ssh/sshd_config` niin, että avautuneessa tiedostossa vaihdoin `PermitRootLogin` osioon **no** ja tallensin tiedoston.
+6. Disabloin SSH root login mahdollisuuden komennolla: `sudoedit /etc/ssh/sshd_config` niin, että avautuneessa tiedostossa vaihdoin `PermitRootLogin` osioon `no` ja tallensin tiedoston.
 
 7. Viimeisenä vaiheena SSH restart komennolla: `sudo service ssh restart`
 
