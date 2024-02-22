@@ -2,15 +2,15 @@
 
 Olen tehtävissä merkannut aikoja ainoastaan olennaisiksi kokemiini osioihin. Viikon 5 tehtävät olivat seuraavat:
 
-- a)[Koko juttu]()
-- b)[Pubkey]()
-- c)[Digging host]()
-- m)[Vapaaehtoinen]()
+- a)[Koko juttu](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h5%20Koko%20juttu/Palautus5.md#a-koko-juttu)
+- b)[Pubkey](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h5%20Koko%20juttu/Palautus5.md#b-pubkey)
+- c)[Digging host](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h5%20Koko%20juttu/Palautus5.md#c-digging-host)
+- m)[Vapaaehtoinen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h5%20Koko%20juttu/Palautus5.md#m-vapaaehtoinen)
 
 Lisäksi alla vielä suorat linkit fyysisen sekä virtuaalikoneen tietoihin:
 
-- [ Fyysisen koneen tiedot]()
-- [ Virtuaalikoneen tiedot]()
+- [ Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h5%20Koko%20juttu/Palautus5.md#fyysinen-tietokone)
+- [ Virtuaalikoneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h5%20Koko%20juttu/Palautus5.md#virtuaalikone)
 
 Osion lähteet: (Karvinen 2024.)
 
