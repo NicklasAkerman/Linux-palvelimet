@@ -2,14 +2,14 @@
 
 Olen tehtävissä merkannut aikoja ainoastaan olennaisiksi kokemiini osioihin. Viikon 6 tehtävät olivat seuraavat:
 
-- x)[ Kahden artikkelin huomiot]()
-- a)[ Yksinkertainen esimerkkiohjelma Djangolla]()
-- b)[ Djangon tuotantotyyppinen asennus]()
+- x)[ Kahden artikkelin huomiot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h6%20DJ%20Ango/Palautus6.md#x-kahden-artikkelin-huomiot)
+- a)[ Yksinkertainen esimerkkiohjelma Djangolla](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h6%20DJ%20Ango/Palautus6.md#a-yksinkertainen-esimerkkiohjelma-djangolla)
+- b)[ Djangon tuotantotyyppinen asennus](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h6%20DJ%20Ango/Palautus6.md#b-djangon-tuotantotyyppinen-asennus)
 
 Lisäksi alla vielä suorat linkit fyysisen sekä virtuaalikoneen tietoihin:
 
-- [ Fyysisen koneen tiedot]()
-- [ Virtuaalikoneen tiedot]()
+- [ Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h6%20DJ%20Ango/Palautus6.md#fyysinen-tietokone)
+- [ Virtuaalikoneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h6%20DJ%20Ango/Palautus6.md#virtuaalikone)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -144,49 +144,37 @@ Osion lähteet: (Karvinen 2022a)
 
 2. Tein kansiot, index.html ja virtualhostin
     > `mkdir -p publicwsgi/tuotanto/static/`
-
     > `echo "Staattinen"|tee publicwsgi/tuotanto/static/index.html`
-
     > `sudoedit /etc/apache2/sites-available/tuotanto.conf`
     ![b1.png](b1.png)  
-
     > `sudo a2ensite tuotanto.conf`
     > `sudo a2dissite 000-default.conf `
     > `sudo systemctl restart apache2`
-
     > `curl http://localhost/static/`
 
 3. Djangon asennus ja aktivointi VirtualEnviin
     > `sudo apt-get -y install virtualenv`
-
     >`cd`
     >`cd publicwsgi/`
-
     > `virtualenv -p python3 --system-site-packages env`
     > `source env/bin/activate`
     > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)
-
     > `micro requirements.txt` (Kirjoitin: `django`)
-
     > `pip install -r requirements.txt`
     > `django-admin --version` palautti version: `5.0.2`
 
 4. Django projektin asennus
     > `django-admin startproject tuotanto`
     > Tuli virhe `CommandError: '/home/nick/publicwsgi/tuotanto' already exists` joten poistin aiemmin luodun tuotanto kansion menemällä polkuun `/home/nick/publicwsgi` ja antamalla komennon `rm -r tuotanto` ja sen jälkeen uudestaan `django-admin startproject tuotanto`
-
     > Loin uudestaan kansion static `mkdir static` ja luodussa kansiossa `micro index.html` ja tarkistin sen toiminnan
 
 5. Tuotanto.conf tiedoston asettaminen
     >`sudoedit /etc/apache2/sites-available/tuotanto.conf`
     ![b2.png](b2.png)
-
     >`sudo apt-get -y install libapache2-mod-wsgi-py3`
     > `sudo systemctl restart apache2`
-  
     > localhost antoi virheen, joten errorlogeja tutkimaan `sudo tail /var/log/apache2/error.log` josta löytyi virheitä:
     ![b3.png](b3.png)
-
     > Ensimmäisenä tarkistin polut ja kaikki polut olivat toimia. Seuraavaksi menin tarkistamaan tuotanto.conf tiedoston polkuja ja huomasin, että polku `/home/nick/publicwsgi/env/lib/python3.9/site-packages` ei toiminut joten lähdin seuraamaan polkua ja oikea polku olikin `/home/nick/publicwsgi/env/lib/python3.11/site-packages`. Tallensin conf tiedoston ja käynnistin apachen uudelleen `sudo systemctl restart apache2` jonka jälkeen kaikki alkoi toimimaan.
       ![b4.png](b4.png)
 
@@ -194,10 +182,8 @@ Osion lähteet: (Karvinen 2022a)
     > `cd`
     > `cd publicwsgi/tuotanto/`
     > `micro tuotanto/settings.py`
-    
     > `DEBUG = False`
     > `ALLOWED_HOSTS = ['localhost']`
-
     > `touch tuotanto/wsgi.py` <-- Tällä saadaan muutokset käyttöön
 
 7. CSS asentaminen
