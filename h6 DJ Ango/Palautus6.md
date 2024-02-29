@@ -157,15 +157,15 @@ Osion lähteet: (Karvinen 2022a)
 
 3. Djangon asennus ja aktivointi VirtualEnviin
 
-  > `sudo apt-get -y install virtualenv`   
-  >`cd`   
-  >`cd publicwsgi/`   
-  > `virtualenv -p python3 --system-site-packages env`   
-  > `source env/bin/activate`   
-  > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)  
-  > `micro requirements.txt` (Kirjoitin: `django`)  
-  > `pip install -r requirements.txt`   
-  > `django-admin --version` palautti version: `5.0.2`  
+    > `sudo apt-get -y install virtualenv`   
+    > `cd`   
+    > `cd publicwsgi/`   
+    > `virtualenv -p python3 --system-site-packages env`   
+    > `source env/bin/activate`   
+    > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)  
+    > `micro requirements.txt` (Kirjoitin: `django`)  
+    > `pip install -r requirements.txt`   
+    > `django-admin --version` palautti version: `5.0.2`  
 
 4. Django projektin asennus
 
@@ -177,35 +177,45 @@ Osion lähteet: (Karvinen 2022a)
 
 5. Tuotanto.conf tiedoston asettaminen
 
-   > `sudoedit /etc/apache2/sites-available/tuotanto.conf`
-   > ![b2.png](b2.png) >`sudo apt-get -y install libapache2-mod-wsgi-py3` > `sudo systemctl restart apache2`
-   > localhost antoi virheen, joten errorlogeja tutkimaan `sudo tail /var/log/apache2/error.log` josta löytyi virheitä:
-   > ![b3.png](b3.png)
-   > Ensimmäisenä tarkistin polut ja kaikki polut olivat toimia. Seuraavaksi menin tarkistamaan tuotanto.conf tiedoston polkuja ja huomasin, että polku `/home/nick/publicwsgi/env/lib/python3.9/site-packages` ei toiminut joten lähdin seuraamaan polkua ja oikea polku olikin `/home/nick/publicwsgi/env/lib/python3.11/site-packages`. Tallensin conf tiedoston ja käynnistin apachen uudelleen `sudo systemctl restart apache2` jonka jälkeen kaikki alkoi toimimaan.
-   > ![b4.png](b4.png)
+   > `sudoedit /etc/apache2/sites-available/tuotanto.conf`  
+   > ![b2.png](b2.png)   
+   >`sudo apt-get -y install libapache2-mod-wsgi-py3` 
+   > `sudo systemctl restart apache2`  
+   > localhost antoi virheen, joten errorlogeja tutkimaan `sudo tail /var/log/apache2/error.log` josta löytyi virheitä:  
+   > ![b3.png](b3.png)  
+   > Ensimmäisenä tarkistin polut ja kaikki polut olivat toimia. Seuraavaksi menin tarkistamaan tuotanto.conf tiedoston polkuja ja huomasin, että polku `/home/nick/publicwsgi/env/lib/python3.9/site-packages` ei toiminut joten lähdin seuraamaan polkua ja oikea polku olikin `/home/nick/publicwsgi/env/lib/python3.11/site-packages`. Tallensin conf tiedoston ja käynnistin apachen uudelleen `sudo systemctl restart apache2` jonka jälkeen kaikki alkoi toimimaan.  
+   > ![b4.png](b4.png)  
 
 6. Debugin poispäältä ottaminen
 
-   > `cd` > `cd publicwsgi/tuotanto/` > `micro tuotanto/settings.py` > `DEBUG = False` > `ALLOWED_HOSTS = ['localhost']` > `touch tuotanto/wsgi.py` <-- Tällä saadaan muutokset käyttöön
+   > `cd`  
+   > `cd publicwsgi/tuotanto/`   
+   > `micro tuotanto/settings.py`  
+  > `DEBUG = False`   
+  > `ALLOWED_HOSTS = ['localhost']`   
+  > `touch tuotanto/wsgi.py` <-- Tällä saadaan muutokset käyttöön  
 
 7. CSS asentaminen
-   Lähtötilanne localhost/admin:
-   ![b5.png](b5.png)
+   Lähtötilanne localhost/admin:  
+   ![b5.png](b5.png)  
 
-   > `cd` > `cd publicwsgi/tuotanto/` > `micro tuotanto/settings.py`
+   > `cd`   
+   > `cd publicwsgi/tuotanto/`   
+   > `micro tuotanto/settings.py`  
 
-   Lisätään koodi alkuun:
+   Lisätään koodi alkuun:  
 
-   > `import os`
+   > `import os`  
 
-   Lisätään static files osioon
+   Lisätään static files osioon  
 
-   > `STATIC_ROOT = os.path.join(BASE_DIR, 'static/')`
+   > `STATIC_ROOT = os.path.join(BASE_DIR, 'static/')`  
 
-   > Ajetaan komento `./manage.py collectstatic` >![b6.png](b6.png)
+   > Ajetaan komento `./manage.py collectstatic`   
+   >![b6.png](b6.png)  
 
-   > Ulkoasu on muuttunut
-   > ![b7.png](b7.png)
+   > Ulkoasu on muuttunut  
+   > ![b7.png](b7.png)  
 
 Osion lähteet: (Karvinen 2022b)
 
