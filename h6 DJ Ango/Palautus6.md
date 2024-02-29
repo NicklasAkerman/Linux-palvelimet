@@ -157,20 +157,22 @@ Osion lähteet: (Karvinen 2022a)
 
 3. Djangon asennus ja aktivointi VirtualEnviin
 
-   > `sudo apt-get -y install virtualenv`   
-   >`cd`   
-   >`cd publicwsgi/`   
-   > `virtualenv -p python3 --system-site-packages env`   
-   > `source env/bin/activate`   
-   > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)  
-   > `micro requirements.txt` (Kirjoitin: `django`)  
-   > `pip install -r requirements.txt`   
-   > `django-admin --version` palautti version: `5.0.2`  
+  > `sudo apt-get -y install virtualenv`   
+  >`cd`   
+  >`cd publicwsgi/`   
+  > `virtualenv -p python3 --system-site-packages env`   
+  > `source env/bin/activate`   
+  > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)  
+  > `micro requirements.txt` (Kirjoitin: `django`)  
+  > `pip install -r requirements.txt`   
+  > `django-admin --version` palautti version: `5.0.2`  
 
 4. Django projektin asennus
 
-   > `django-admin startproject tuotanto`
-   > Tuli virhe `CommandError: '/home/nick/publicwsgi/tuotanto' already exists` joten poistin aiemmin luodun tuotanto kansion menemällä polkuun `/home/nick/publicwsgi` ja antamalla komennon `rm -r tuotanto` ja sen jälkeen uudestaan `django-admin startproject tuotanto`
+   > `django-admin startproject tuotanto`  
+
+   > Tuli virhe `CommandError: '/home/nick/publicwsgi/tuotanto' already exists` joten poistin aiemmin luodun tuotanto kansion menemällä polkuun `/home/nick/publicwsgi` ja antamalla komennon `rm -r tuotanto` ja sen jälkeen uudestaan `django-admin startproject tuotanto`  
+     
    > Loin uudestaan kansion static `mkdir static` ja luodussa kansiossa `micro index.html` ja tarkistin sen toiminnan
 
 5. Tuotanto.conf tiedoston asettaminen
