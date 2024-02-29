@@ -121,8 +121,8 @@ Tunnilla aloiteltiin tätä projektia, joten otin virtuaalikoneen jolla en tät�
    > `./manage.py migrate` <-- Tietokantaan tehdessä muutoksia  
    > `micro crm/admin.py` <-- Tietokanta tulee rekisteröidä  
    > ![a4.png](a4.png)  
-   > - Testataan toiminta komennon `./manage.py runserver` jälkeen  
-   > - Nyt voidaan luoda asiakkaita:  
+   > Testataan toiminta komennon `./manage.py runserver` jälkeen  
+   > Nyt voidaan luoda asiakkaita:  
    >   ![a5.png](a5.png)  
 
 8. Muokataan vielä nimien näyttäminen
