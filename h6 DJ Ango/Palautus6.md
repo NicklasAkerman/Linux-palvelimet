@@ -177,23 +177,23 @@ Osion lähteet: (Karvinen 2022a)
 
 5. Tuotanto.conf tiedoston asettaminen
 
-   > `sudoedit /etc/apache2/sites-available/tuotanto.conf`  
-   > ![b2.png](b2.png)   
-   >`sudo apt-get -y install libapache2-mod-wsgi-py3` 
-   > `sudo systemctl restart apache2`  
-   > localhost antoi virheen, joten errorlogeja tutkimaan `sudo tail /var/log/apache2/error.log` josta löytyi virheitä:  
-   > ![b3.png](b3.png)  
+   > `sudoedit /etc/apache2/sites-available/tuotanto.conf`   
+   > ![b2.png](b2.png)    
+   >`sudo apt-get -y install libapache2-mod-wsgi-py3`  
+   > `sudo systemctl restart apache2`   
+   > localhost antoi virheen, joten errorlogeja tutkimaan `sudo tail /var/log/apache2/error.log` josta löytyi virheitä:   
+   > ![b3.png](b3.png)   
    > Ensimmäisenä tarkistin polut ja kaikki polut olivat toimia. Seuraavaksi menin tarkistamaan tuotanto.conf tiedoston polkuja ja huomasin, että polku `/home/nick/publicwsgi/env/lib/python3.9/site-packages` ei toiminut joten lähdin seuraamaan polkua ja oikea polku olikin `/home/nick/publicwsgi/env/lib/python3.11/site-packages`. Tallensin conf tiedoston ja käynnistin apachen uudelleen `sudo systemctl restart apache2` jonka jälkeen kaikki alkoi toimimaan.  
    > ![b4.png](b4.png)  
 
 6. Debugin poispäältä ottaminen
 
-   > `cd`  
-   > `cd publicwsgi/tuotanto/`   
-   > `micro tuotanto/settings.py`  
-  > `DEBUG = False`   
-  > `ALLOWED_HOSTS = ['localhost']`   
-  > `touch tuotanto/wsgi.py` <-- Tällä saadaan muutokset käyttöön  
+    > `cd`  
+    > `cd publicwsgi/tuotanto/`   
+    > `micro tuotanto/settings.py`  
+    > `DEBUG = False`   
+    > `ALLOWED_HOSTS = ['localhost']`   
+    > `touch tuotanto/wsgi.py` <-- Tällä saadaan muutokset käyttöön  
 
 7. CSS asentaminen
    Lähtötilanne localhost/admin:  
