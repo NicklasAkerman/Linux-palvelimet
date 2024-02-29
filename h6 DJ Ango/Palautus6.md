@@ -82,24 +82,27 @@ Tunnilla aloiteltiin tätä projektia, joten otin virtuaalikoneen jolla en tät�
    > cd django  
    > polku on `/home/nicklashh/django`
 3. Asennukset virtualenvissä
-   > virtualenv -p python3 --system-site-packages env
-   > source env/bin/activate
+   > virtualenv -p python3 --system-site-packages env  
+   > source env/bin/activate  
 4. Requirements.txt
-   > micro requirements.txt(Sisällöksi `django`)
-   > ajetaan asennus `pip install -r requirements.txt`
+   > micro requirements.txt(Sisällöksi `django`)  
+   > ajetaan asennus `pip install -r requirements.txt`  
 5. Uusi projekti
 
    > `django-admin startproject testiprojekti`
 
-   > siirrytään kansioon `cd testiprojekti` komennolla
+   > siirrytään kansioon `cd testiprojekti` komennolla  
 
-   > käynnistys komennolla `./manage.py runserver` > ![a1.png](a1.png)
+   > käynnistys komennolla `./manage.py runserver`   
+   > ![a1.png](a1.png)  
    > Suljetaan palvelin CTRL + C
 
 6. Admin osion muutokset
 
-   > Osoitteessa `127.0.0.1:8000/admin/` on sisäänkirjautumista varten ikkuna, joten laitetaan se toimimaan seuraavasti:
-   > `./manage.py makemigrations` > `./manage.py migrate` > `sudo apt-get install pwgen` > `pwgen -s 20 1 # randomize a password` > `./manage.py createsuperuser` (täytin vain salasanan)
+   > Osoitteessa `127.0.0.1:8000/admin/` on sisäänkirjautumista varten ikkuna, joten laitetaan se toimimaan seuraavasti:  
+   > `./manage.py makemigrations` > `./manage.py migrate` > `sudo apt-get install pwgen`  
+   > `pwgen -s 20 1 # randomize a password`  
+   > `./manage.py createsuperuser` (täytin vain salasanan)  
 
    > Komennolla `./manage.py runserver` projektin käynnistys ja sisäänkirjautumisyritys admin sivulle
    > ![a2.png](a2.png)
