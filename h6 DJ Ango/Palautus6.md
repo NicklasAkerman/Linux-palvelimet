@@ -171,7 +171,7 @@ Osion lähteet: (Karvinen 2022a)
 
    > `django-admin startproject tuotanto`  
 
-   > Tuli virhe `CommandError: '/home/nick/publicwsgi/tuotanto' already exists` joten poistin aiemmin luodun tuotanto kansion menemällä polkuun `/home/nick/publicwsgi` ja antamalla komennon `rm -r tuotanto` ja sen jälkeen uudestaan `django-admin startproject tuotanto`  
+   > Tuli virhe **CommandError: '/home/nick/publicwsgi/tuotanto' already exists** joten poistin aiemmin luodun tuotanto kansion menemällä polkuun `/home/nick/publicwsgi` ja antamalla komennon `rm -r tuotanto` ja sen jälkeen uudestaan `django-admin startproject tuotanto`  
      
    > Loin uudestaan kansion static `mkdir static` ja luodussa kansiossa `micro index.html` ja tarkistin sen toiminnan
 
