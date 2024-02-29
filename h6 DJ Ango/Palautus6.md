@@ -106,10 +106,10 @@ Tunnilla aloiteltiin tätä projektia, joten otin virtuaalikoneen jolla en tät�
    > `pwgen -s 20 1 # randomize a password`  
    > `./manage.py createsuperuser` (täytin vain salasanan)  
 
-   > Komennolla `./manage.py runserver` projektin käynnistys ja sisäänkirjautumisyritys admin sivulle
-   > ![a2.png](a2.png)
+   > Komennolla `./manage.py runserver` projektin käynnistys ja sisäänkirjautumisyritys admin sivulle  
+   > ![a2.png](a2.png)  
 
-   > Lisäsin vielä users osiossa uuden käyttäjän ja testasin, että pystyn kirjautumaan sille ja lisäsin sille kaikki oikeudet.
+   > Lisäsin vielä users osiossa uuden käyttäjän ja testasin, että pystyn kirjautumaan sille ja lisäsin sille kaikki oikeudet.  
 
 7. Lisätään tietokanta
 
