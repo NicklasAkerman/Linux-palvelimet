@@ -100,11 +100,11 @@ Tunnilla aloiteltiin tätä projektia, joten otin virtuaalikoneen jolla en tät�
 6. Admin osion muutokset
 
    > Osoitteessa `127.0.0.1:8000/admin/` on sisäänkirjautumista varten ikkuna, joten laitetaan se toimimaan seuraavasti:  
-   > `./manage.py makemigrations` 
-   > `./manage.py migrate` 
-   > `sudo apt-get install pwgen`  
-   > `pwgen -s 20 1 # randomize a password`  
-   > `./manage.py createsuperuser` (täytin vain salasanan)  
+   > `./manage.py makemigrations`  
+   > `./manage.py migrate`   
+   > `sudo apt-get install pwgen`    
+   > `pwgen -s 20 1 # randomize a password`    
+   > `./manage.py createsuperuser` (täytin vain salasanan)    
 
    > Komennolla `./manage.py runserver` projektin käynnistys ja sisäänkirjautumisyritys admin sivulle  
    > ![a2.png](a2.png)  
