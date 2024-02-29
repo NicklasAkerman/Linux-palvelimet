@@ -113,28 +113,24 @@ Tunnilla aloiteltiin tätä projektia, joten otin virtuaalikoneen jolla en tät�
 
 7. Lisätään tietokanta
 
-   > Komento `./manage.py startapp crm` luo uuden uuden kansion
-
-   > Komennolla `micro testiprojekti/settings.py` avasin settings.py tiedoston ja lisäsin `INSTALLED_APPS` osioon `'crm'`
-
-   > Avasin models.py tiedoston `micro crm/models.py` ja lisäsin sinne uuden luokan:  
-   > ![a3.png](a3.png)
-
-   > `./manage.py makemigrations` <-- Tietokantaan tehdessä muutoksia
-   > `./manage.py migrate` <-- Tietokantaan tehdessä muutoksia
-   > `micro crm/admin.py` <-- Tietokanta tulee rekisteröidä
-   > ![a4.png](a4.png)
-
-   > - Testataan toiminta komennon `./manage.py runserver` jälkeen
+   > Komento `./manage.py startapp crm` luo uuden uuden kansion  
+   > Komennolla `micro testiprojekti/settings.py` avasin settings.py tiedoston ja lisäsin `INSTALLED_APPS` osioon `'crm'`  
+   > Avasin models.py tiedoston `micro crm/models.py` ja lisäsin sinne uuden luokan:    
+   > ![a3.png](a3.png)  
+   > `./manage.py makemigrations` <-- Tietokantaan tehdessä muutoksia  
+   > `./manage.py migrate` <-- Tietokantaan tehdessä muutoksia  
+   > `micro crm/admin.py` <-- Tietokanta tulee rekisteröidä  
+   > ![a4.png](a4.png)  
+   > - Testataan toiminta komennon `./manage.py runserver` jälkeen  
    > - Nyt voidaan luoda asiakkaita:  
-   >   ![a5.png](a5.png)
+   >   ![a5.png](a5.png)  
 
 8. Muokataan vielä nimien näyttäminen
-   `micro crm/models.py`
+   `micro crm/models.py`  
 
-   ![a6.png](a6.png)
+   ![a6.png](a6.png)  
 
-   ![a7.png](a7.png)
+   ![a7.png](a7.png)  
 
 Osion lähteet: (Karvinen 2022a)
 
@@ -150,15 +146,26 @@ Osion lähteet: (Karvinen 2022a)
 
 2. Tein kansiot, index.html ja virtualhostin
 
-   > `mkdir -p publicwsgi/tuotanto/static/` > `echo "Staattinen"|tee publicwsgi/tuotanto/static/index.html` > `sudoedit /etc/apache2/sites-available/tuotanto.conf`
+   > `mkdir -p publicwsgi/tuotanto/static/`  
+   > `echo "Staattinen"|tee publicwsgi/tuotanto/static/index.html`  
+   > `sudoedit /etc/apache2/sites-available/tuotanto.conf`  
    > ![b1.png](b1.png)  
-   > `sudo a2ensite tuotanto.conf` > `sudo a2dissite 000-default.conf ` > `sudo systemctl restart apache2` > `curl http://localhost/static/`
+   > `sudo a2ensite tuotanto.conf`    
+   > `sudo a2dissite 000-default.conf `     
+   > `sudo systemctl restart apache2`   
+   > `curl http://localhost/static/`  
 
 3. Djangon asennus ja aktivointi VirtualEnviin
 
-   > `sudo apt-get -y install virtualenv` >`cd` >`cd publicwsgi/` > `virtualenv -p python3 --system-site-packages env` > `source env/bin/activate` > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)
-   > `micro requirements.txt` (Kirjoitin: `django`)
-   > `pip install -r requirements.txt` > `django-admin --version` palautti version: `5.0.2`
+   > `sudo apt-get -y install virtualenv`   
+   >`cd`   
+   >`cd publicwsgi/`   
+   > `virtualenv -p python3 --system-site-packages env`   
+   > `source env/bin/activate`   
+   > `which pip` (palautuksena: /home/nick/publicwsgi/env/bin/pip)  
+   > `micro requirements.txt` (Kirjoitin: `django`)  
+   > `pip install -r requirements.txt`   
+   > `django-admin --version` palautti version: `5.0.2`  
 
 4. Django projektin asennus
 
