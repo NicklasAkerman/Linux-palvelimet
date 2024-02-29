@@ -149,7 +149,7 @@ Osion lähteet: (Karvinen 2022a)
    > `mkdir -p publicwsgi/tuotanto/static/`  
    > `echo "Staattinen"|tee publicwsgi/tuotanto/static/index.html`  
    > `sudoedit /etc/apache2/sites-available/tuotanto.conf`  
-   > ![b1.png](b1.png)  
+   > ![b1.png](b1.png)  </br>
    > `sudo a2ensite tuotanto.conf`    
    > `sudo a2dissite 000-default.conf `     
    > `sudo systemctl restart apache2`   
