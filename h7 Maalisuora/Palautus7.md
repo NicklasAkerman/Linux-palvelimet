@@ -108,7 +108,7 @@ Tehtävänä oli:
   ![c.d1.png](c.d1.png)  
 2. Vaihdoin käyttöoikeudet seuraavasti `chmod ugo+rx hey` ja kopioin kansion polkuun jotta koodi toimii kaikilla käyttäjillä komennolla `sudo cp hey /usr/local/bin/`
 3. Tein toisen käyttäjän komennolla `sudo adduser toinen` ja täyttelin tietoja.
-4. Testasin toiminnan vaihtamalla luodulle käyttäjälle komennolla `su - toinen` ja kirjoitin `hey`:
+4. Testasin toiminnan vaihtamalla luodulle käyttäjälle komennolla `su - toinen` ja kirjoitin `hey`:  
     ![c.d2.png](c.d2.png)  
 
 Tehtäväkokonaisuus meni ulkomuistista aika kivasti.
@@ -132,13 +132,13 @@ Tehtävänä oli:
     > cd public_html
     > micro index.html
 
-4. **Lopuksi vielä oikeudet kuntoon:**
+4. **Lopuksi vielä oikeudet kuntoon:**  
   ![c.f1.png](c.f1.png)  
 
 5. **Apachen uudelleenkäynnistys**
   >sudo systemctl restart apache2
 
-6. **Erkin etusivun testaus:**
+6. **Erkin etusivun testaus:**  
    ![c.f2.png](c.f2.png) 
 
 Osion lähteet: (Karvinen 2023)
@@ -211,20 +211,20 @@ Tehtävänä oli:
     - Kokeilin vielä kirjautua sisään erkin tunnuksella ja salasanalla, jotta voin todeta kaiken olevan OK.
 
   7. Tietokanta
-    - `./manage.py startapp tietokanta`
-    - `micro Lahjoitukset/settings.py`
-    - Lisäsin `INSTALLED_APPS` osion viimeiselle riville `'tietokanta',`
-    - Avasin `micro tietokanta/models.py` laittaakseni luokat kuntoon  
+    - `./manage.py startapp tietokanta`  
+    - `micro Lahjoitukset/settings.py`  
+    - Lisäsin `INSTALLED_APPS` osion viimeiselle riville `'tietokanta',`  
+    - Avasin `micro tietokanta/models.py` laittaakseni luokat kuntoon    
     ![h1.png](h1.png)  
-    - Avasin `micro tietokanta/admin.py` jonne lisäsin tietokannan  
+    - Avasin `micro tietokanta/admin.py` jonne lisäsin tietokannan    
       ![h2.png](h2.png)  
-    - `./manage.py makemigrations` - Tulee päivittää tietokantamuutoksien yhteydessä
-    - `./manage.py migrate` - Tulee päivittää tietokantamuutoksien yhteydessä  
+    - `./manage.py makemigrations` - Tulee päivittää tietokantamuutoksien yhteydessä  
+    - `./manage.py migrate` - Tulee päivittää tietokantamuutoksien yhteydessä    
       ![h3.png](h3.png)  
-    - `micro tietokanta/admin.py` - Rekisteröin tietokannan
-    - `./manage.py runserver` - serveri takaisin päälle  
+    - `micro tietokanta/admin.py` - Rekisteröin tietokannan  
+    - `./manage.py runserver` - serveri takaisin päälle    
     ![h4.png](h4.png)  
-    - Lisäsin erkille vielä oikeudet katsoa tietokantaa lahjoitukset   
+    - Lisäsin erkille vielä oikeudet katsoa tietokantaa lahjoitukset    
     ![h5.png](h5.png)  
 
   **VALMIS**  
