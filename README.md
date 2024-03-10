@@ -4,7 +4,7 @@
 https://terokarvinen.com/
 
 
-Hyödyllisiä komentoja muistikatkosten varalle:
+Hyödyllisiä komentoja muistikatkosten varalle:  
 `sudo apt-get update` Pitää ajaa ennen asennuksia  
 `sudo apt-get install` Lataa ohjelmia  
 `cd`  
