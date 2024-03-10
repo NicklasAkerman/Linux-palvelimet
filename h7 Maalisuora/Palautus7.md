@@ -2,15 +2,15 @@
 
 Olen tehtävissä merkannut aikoja ainoastaan olennaisiksi kokemiini osioihin. Viikon 6 tehtävät olivat seuraavat:
 
-- a)[ "Hei maailma" kääntäminen]()
-- b)[ Uusi komento kaikille käyttäjille]()
-- c)[ Vanhan laboratorioharjoituksen ratkaiseminen]()
-- d)[ Tyhjän virtuaalikoneen asennus]()
+- a)[ "Hei maailma" kääntäminen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#a-hei-maailma-k%C3%A4%C3%A4nt%C3%A4minen)
+- b)[ Uusi komento kaikille käyttäjille](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#b-uusi-komento-kaikille-k%C3%A4ytt%C3%A4jille)
+- c)[ Vanhan laboratorioharjoituksen ratkaiseminen](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#c-vanhan-laboratorioharjoituksen-ratkaiseminen)
+- d)[ Tyhjän virtuaalikoneen asennus](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#d-tyhj%C3%A4n-virtuaalikoneen-asennus)
 
 Lisäksi alla vielä suorat linkit fyysisen sekä virtuaalikoneen tietoihin:
 
-- [ Fyysisen koneen tiedot]()
-- [ Virtuaalikoneen tiedot]()
+- [ Fyysisen koneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#fyysinen-tietokone)
+- [ Virtuaalikoneen tiedot](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#virtuaalikone)
 
 Osion lähteet: (Karvinen 2024.)
 
@@ -85,10 +85,10 @@ Osion lähteet: (Karvinen 2007, Omat muistiinpanot tunnilta 7(5.3.2024))
 
 ## c) Vanhan laboratorioharjoituksen ratkaiseminen
 Otin tehtäväksi vuoden 2023 kurssin labraharjoituksen: [**Final Lab for Linux Palvelimet 2023.**](https://terokarvinen.com/2023/linux-palvelimet-2023-arvioitava-laboratorioharjoitus/) Tein harjoituksesesta seuraavat tehtävät(Linkki raportin oikeaan osaan):
-- d) ['hey']()
-- f) [Stattisesti sinun]()
-- g) [Salattua hallintaa]()
-- h) [Djangon lahjat]()
+- d) ['hey'](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#d-hey)
+- f) [Stattisesti sinun](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#f-stattisesti-sinun)
+- g) [Salattua hallintaa](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#g-salattua-hallintaa)
+- h) [Djangon lahjat](https://github.com/NicklasHH/Linux-palvelimet/blob/master/h7%20Maalisuora/Palautus7.md#h-djangon-lahjat)
 
 Suoritin tehtävän uudella virtuaalikoneella:
   > 4GB RAM  
@@ -101,7 +101,7 @@ Suoritin tehtävän uudella virtuaalikoneella:
   > Palomuuri asennettu ja porttiin 80 tehty reikä
   
 
-#### d) 'hey'
+### d) 'hey'
 Tehtävänä oli:  
   ![t1.png](t1.png)  
 1. Tein ensin kansion, tiedoston ja itse koodin:
@@ -114,7 +114,7 @@ Tehtävänä oli:
 Tehtäväkokonaisuus meni ulkomuistista aika kivasti.
 Osion lähteet: (Karvinen 2023)
 
-#### f) Stattisesti sinun
+### f) Stattisesti sinun
 Tehtävänä oli:  
   ![t2.png](t2.png)  
 
@@ -143,7 +143,7 @@ Tehtävänä oli:
 
 Osion lähteet: (Karvinen 2023)
 
-#### g) Salattua hallintaa
+### g) Salattua hallintaa
 Tehtävänä oli:  
   ![t3.png](t3.png)  
 1. **SSH asennus:**
@@ -173,7 +173,7 @@ Olisin myös voinut hakea suoraan portilla 1337 seuraavalla komennolla `sudo lso
 
 Osion lähteet: (Ionos, Gite 2024)
 
-#### h) Djangon lahjat
+### h) Djangon lahjat
 Tehtävänä oli:  
   ![t4.png](t4.png)
 1. Asensin virtualenvin `sudo apt-get install virtualenv python3-pip`
