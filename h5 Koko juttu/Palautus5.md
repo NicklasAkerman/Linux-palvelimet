@@ -180,6 +180,9 @@ Tehtävänä oli automatisoida kirjautuminen julkisella SSH-avaimella.(Karvinen 
 3. Testasin SSH avainta
 Avain ei toiminut, koska olin luonut dropletin ilman SSH avainta. Helpoin reitti tähän oli se, että tein uuden dropletin, johon sain suoraan lisättyä tuon SSH avaimen. Uuden dropletin luotua sain otettua yhteyden komennolla `ssh root@152.42.134.241`. Poistin testin jälkeen tämän dropletin ja pitää tunnilla kysyä, kuinka saisin tuon nykyisen dropletin toimimaan SSH avaimen kanssa.
 
+**MUOKATTU**
+- Opettaja antoi tunnilla niinkin yksinkertaisen vastauksen kuin komennon `ssh-copy-id tunnus@iposoite` suorittaminen paikallisella koneella.
+
 Osion lähteet: (Karvinen 2024, DigitalOcean 2024.)
 
 ---
