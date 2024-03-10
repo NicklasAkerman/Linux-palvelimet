@@ -46,21 +46,21 @@ Virtuaalikoneen tiedot:
 ABC
 
 1. Python:  
-  ![a1.png](a1.png)
+  ![a1.png](a1.png)  
 
 2. Bash:  
-  ![a2.png](a2.png)
+  ![a2.png](a2.png)  
 
-3. Lua:  
-  ![a3.png](a3.png)
+3. Lua:   
+  ![a3.png](a3.png)  
   Tässä homma ei toiminutkaan suoraan ja oletin, että minun tuli asentaa lua. Kirjoitin komennon `sudo apt-get install lua` ja painoin tabia kunnes aukesi kysely, haluanko näyttää kaikki 178 tulosta. Vastattuani kyllä, etsin listalta viimeisimmän version joka oli tässä tapauksessa lua5.4. Asensin sen komennolla `sudo apt-get install lua5.4` jonka jälkeen toimii:  
-  ![a4.png](a4.png) 
+  ![a4.png](a4.png)   
 
 4. Java:
   Javasta oli tunnilla jo puhetta, että sille tulee asentaa jdk, joten etsin sen komennolla `sudo apt-get install openjdk` ja tabia painelemalla löytyikin hakemani ja sen asentaminen vei alle minuutin:  
-  ![a5.png](a5.png)  
+  ![a5.png](a5.png)    
   Asennuksen jälkeen kirjoitin koodin:  
-  ![a6.png](a6.png)
+  ![a6.png](a6.png)  
 
 Osion lähteet: (Karvinen 2018)
 
@@ -70,13 +70,13 @@ Osion lähteet: (Karvinen 2018)
 Tein osiossa ohjelman, joka kertoo käyttäjätunnuksen, tiedostopolun sekä alikansiot. Tunnilla käytiin asiat läpi, mutta pientä muistinvirkistystä hain tunnilla tekemistäni muistiinpanoista sekä Teron artikkelista "Shell Scripting"
 
 1. Aloitin luomalla kansion ja sen sisään tiedoston minne kirjoitin  mitä komentototulkkia tulee käyttää skriptin suoritukseen ja sen jälkeen annoin komennot jotka skripti suorittaa:  
-  ![b1.png](b1.png)
+  ![b1.png](b1.png)  
 
 2. Seuraavaksi lisäsin luku ja kirjoitusoikeudet ja testasin komennon:  
-  ![b2.png](b2.png)
+  ![b2.png](b2.png)  
 
 3. Kopioin vielä wpl tiedoston polkuum /usr/local/bin/ komennolla: `sudo cp wpl /usr/local/bin/` jonka jälkeen testasin komentoa:  
-  ![b3.png](b3.png)
+  ![b3.png](b3.png)  
 
 
 Osion lähteet: (Karvinen 2007, Omat muistiinpanot tunnilta 7(5.3.2024))
@@ -102,21 +102,21 @@ Suoritin tehtävän uudella virtuaalikoneella:
   
 
 #### d) 'hey'
-Tehtävänä oli:
-  ![t1.png](t1.png)
+Tehtävänä oli:  
+  ![t1.png](t1.png)  
 1. Tein ensin kansion, tiedoston ja itse koodin:
-  ![c.d1.png](c.d1.png)
+  ![c.d1.png](c.d1.png)  
 2. Vaihdoin käyttöoikeudet seuraavasti `chmod ugo+rx hey` ja kopioin kansion polkuun jotta koodi toimii kaikilla käyttäjillä komennolla `sudo cp hey /usr/local/bin/`
 3. Tein toisen käyttäjän komennolla `sudo adduser toinen` ja täyttelin tietoja.
 4. Testasin toiminnan vaihtamalla luodulle käyttäjälle komennolla `su - toinen` ja kirjoitin `hey`:
-    ![c.d2.png](c.d2.png)
+    ![c.d2.png](c.d2.png)  
 
 Tehtäväkokonaisuus meni ulkomuistista aika kivasti.
 Osion lähteet: (Karvinen 2023)
 
 #### f) Stattisesti sinun
-Tehtävänä oli:
-  ![t2.png](t2.png)
+Tehtävänä oli:  
+  ![t2.png](t2.png)  
 
 1. **Aloitin asentamalla apachen:**
   - `sudo apt-get update` (En muistanut olinko jo tehnyt tämän, joten tein varuiksi)
@@ -133,7 +133,7 @@ Tehtävänä oli:
     > micro index.html
 
 4. **Lopuksi vielä oikeudet kuntoon:**
-  ![c.f1.png](c.f1.png)
+  ![c.f1.png](c.f1.png)  
 
 5. **Apachen uudelleenkäynnistys**
   >sudo systemctl restart apache2
@@ -144,8 +144,8 @@ Tehtävänä oli:
 Osion lähteet: (Karvinen 2023)
 
 #### g) Salattua hallintaa
-Tehtävänä oli:
-  ![t3.png](t3.png)
+Tehtävänä oli:  
+  ![t3.png](t3.png)  
 1. **SSH asennus:**
    - `sudo apt-get install openssh-server`
 
@@ -157,24 +157,24 @@ Tehtävänä oli:
   - `ssh-keygen` komennolla ssh avaimen luonti
   - `ssh-copy-id nickte01@localhost`
   - Ensimmäisellä kerralla tuli salasana syöttää, joten poistun antamalla komennon `logout`
-  - Testasin SSH toiminnan komennolla `ssh nickte01@localhost`
-  ![c.g1.png](c.g1.png)
+  - Testasin SSH toiminnan komennolla `ssh nickte01@localhost`  
+  ![c.g1.png](c.g1.png)  
 
 4. SSH palvelimen portin konfigurointi.
   - micro /etc/ssh/sshd_config (Rivillä 15 vaihdoin #port 22 kohdan numeron 1337)(Tieto löytyi *Ionoksen* sivuilta)
   - `sudo systemctl restart ssh`
   - Ensimmäisenä jouduin etsimään, kuinka löydän aktiiviset portit. Hetken googleteltua löysin *Giten* kirjoittaman artikkelin mistä löysin komennon: `sudo lsof -i -P -n | grep LISTEN`. Tällä komennolla katsoin, mitkä portit ovat aktiivisia, mutta siellä näkyi sshd kohalla edelleen *:22, joten muokkasin vielä sshd_config tiedostoa seuraavasti: `#port 1337` -> `port 1337`
   - `sudo systemctl restart ssh`
-  - `sudo lsof -i -P -n | grep LISTEN` Nyt tässä näkyi käytössä portti 1337:
+  - `sudo lsof -i -P -n | grep LISTEN` Nyt tässä näkyi käytössä portti 1337:  
    ![c.g2.png](c.g2.png)
 
-Olisin myös voinut hakea suoraan portilla 1337 seuraavalla komennolla `sudo lsof -i:1337`
-  ![c.g3.png](c.g3.png)
+Olisin myös voinut hakea suoraan portilla 1337 seuraavalla komennolla `sudo lsof -i:1337`  
+  ![c.g3.png](c.g3.png)  
 
 Osion lähteet: (Ionos, Gite 2024)
 
 #### h) Djangon lahjat
-Tehtävänä oli:
+Tehtävänä oli:  
   ![t4.png](t4.png)
 1. Asensin virtualenvin `sudo apt-get install virtualenv python3-pip`
 2. Loin projektille oman kansion
@@ -214,20 +214,20 @@ Tehtävänä oli:
     - `./manage.py startapp tietokanta`
     - `micro Lahjoitukset/settings.py`
     - Lisäsin `INSTALLED_APPS` osion viimeiselle riville `'tietokanta',`
-    - Avasin `micro tietokanta/models.py` laittaakseni luokat kuntoon
-    ![h1.png](h1.png)
-    - Avasin `micro tietokanta/admin.py` jonne lisäsin tietokannan
-      ![h2.png](h2.png)
+    - Avasin `micro tietokanta/models.py` laittaakseni luokat kuntoon  
+    ![h1.png](h1.png)  
+    - Avasin `micro tietokanta/admin.py` jonne lisäsin tietokannan  
+      ![h2.png](h2.png)  
     - `./manage.py makemigrations` - Tulee päivittää tietokantamuutoksien yhteydessä
-    - `./manage.py migrate` - Tulee päivittää tietokantamuutoksien yhteydessä
-      ![h3.png](h3.png)
+    - `./manage.py migrate` - Tulee päivittää tietokantamuutoksien yhteydessä  
+      ![h3.png](h3.png)  
     - `micro tietokanta/admin.py` - Rekisteröin tietokannan
-    - `./manage.py runserver` - serveri takaisin päälle
-    ![h4.png](h4.png)
-    - Lisäsin erkille vielä oikeudet katsoa tietokantaa lahjoitukset 
-    ![h5.png](h5.png)
+    - `./manage.py runserver` - serveri takaisin päälle  
+    ![h4.png](h4.png)  
+    - Lisäsin erkille vielä oikeudet katsoa tietokantaa lahjoitukset   
+    ![h5.png](h5.png)  
 
-  **VALMIS**
+  **VALMIS**  
     ![h6.png](h6.png)
 
 Osion lähteet: (NicklasHH 2024) 
