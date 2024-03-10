@@ -210,7 +210,7 @@ Tehtävänä oli:
     - Save
     - Kokeilin vielä kirjautua sisään erkin tunnuksella ja salasanalla, jotta voin todeta kaiken olevan OK.
 
-  7. Tietokanta
+  7. Tietokanta  
     - `./manage.py startapp tietokanta`  
     - `micro Lahjoitukset/settings.py`  
     - Lisäsin `INSTALLED_APPS` osion viimeiselle riville `'tietokanta',`  
