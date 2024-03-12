@@ -256,8 +256,8 @@ Arvioitavaa labraa varten tulee olla asennettuna tyhjä virtuaalikone. Koneelle 
   ![d3.png](d3.png)
 
 4. LISÄTTY 12.3.2024
-Asennettu myös guest additions ja ajettu komennot:
-> sudo apt-get update
+Asennettu myös guest additions ja ajettu komennot:  
+> sudo apt-get update  
 > sudo apt-get dist-upgrade
 
 ---
