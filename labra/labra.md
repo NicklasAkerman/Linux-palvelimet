@@ -19,23 +19,23 @@
 
 ## c) Ei kolmea sekoseiskaa  
 	Tein toisen käyttäjän tarkistaakseni lopputuloksen, ensin komento ilman oikeuksien muokkausta perässä oikeuksien muokkauksen jälkeen:  
-	![Screenshot_2024-03-12_10-32-24.png](Screenshot_2024-03-12_10-32-24.png)  
+![Screenshot_2024-03-12_10-32-24.png](Screenshot_2024-03-12_10-32-24.png)  
 
 ## d) 'howdy'  
 	Testasin komennon omalla käyttäjälläni sekä edellisessä osiossa luodulla "toinenuseri" käyttäjällä joka oli /etc hakemistossa  
-	![Screenshot_2024-03-12_10-44-45.png](Screenshot_2024-03-12_10-44-45.png)  
+![Screenshot_2024-03-12_10-44-45.png](Screenshot_2024-03-12_10-44-45.png)  
 
 	Osion lähteet(NicklasHH 2024)
 
 ## e) Etusivu uusiks  
 	1. Apachen asennuksen toimivuus testattu:  
-	![Screenshot_2024-03-12_10-48-59.png](Screenshot_2024-03-12_10-48-59.png)  
+![Screenshot_2024-03-12_10-48-59.png](Screenshot_2024-03-12_10-48-59.png)  
 
 	2. Toimiva etusivu IP osoitteella:  
-	![Screenshot_2024-03-12_11-17-39.png](Screenshot_2024-03-12_11-17-39.png)  
+![Screenshot_2024-03-12_11-17-39.png](Screenshot_2024-03-12_11-17-39.png)  
 
 	3. Tarvittavien tiedostojen ja kansioiden oikeudet   
-	![Screenshot_2024-03-12_11-19-13.png](Screenshot_2024-03-12_11-19-13.png)  
+![Screenshot_2024-03-12_11-19-13.png](Screenshot_2024-03-12_11-19-13.png)  
 
 	4. Polussa `/home/nick/publicsites/AI_Kakone` komennolla `micro index.html` pääsee etusivua muokkaamaan ilman sudo oikeuksia.  
 
@@ -43,7 +43,7 @@
 	1. Asensin ssh  
 	2. Tein käyttäjän nickte01  
 	3. SSH yhteys:  
-	![Screenshot_2024-03-12_10-55-42.png](Screenshot_2024-03-12_10-55-42.png)  
+![Screenshot_2024-03-12_10-55-42.png](Screenshot_2024-03-12_10-55-42.png)  
 	
 	Osion lähteet(NicklasHH 2024)
 
@@ -52,17 +52,17 @@
 	![Screenshot_2024-03-12_11-26-46.png](Screenshot_2024-03-12_11-26-46.png)  
 	
 	2. Lisäsin Erkille Staff statuksen view oikeuksia djangon web liittymän kautta.    
-	![Screenshot_2024-03-12_11-57-25.png](Screenshot_2024-03-12_11-57-25.png)  
+![Screenshot_2024-03-12_11-57-25.png](Screenshot_2024-03-12_11-57-25.png)  
 
 	3. Tietokantaan lisätty kentät tekoälyn nimelle ja omistajan yritykselle. Lisäksi tietokantaan on lisätty (models.py) toiminto, jolla näytetään Name kentän pituus.(Helsingin yliopisto s.a.)  
-	![Screenshot_2024-03-12_12-15-25.png](Screenshot_2024-03-12_12-15-25.png)  
+![Screenshot_2024-03-12_12-15-25.png](Screenshot_2024-03-12_12-15-25.png)  
 
 	Osion lähteet(NicklasHH 2024, Helsingin yliopisto s.a., Karvinen 2022a)
 	
 ## h) Tuotantopropelli
 	1. Tehty tuotantopropelli projekti `django-admin startproject tuotantopropelli`  
 	2. Tehty tuotantopropelli.conf `sudoedit /etc/apache2/sites-available/tuotantopropelli.conf`  
-	![Screenshot_2024-03-12_12-43-01.png](Screenshot_2024-03-12_12-43-01.png)
+![Screenshot_2024-03-12_12-43-01.png](Screenshot_2024-03-12_12-43-01.png)
 	3. Asennettu WSGI moduuli `sudo apt-get -y install libapache2-mod-wsgi-py3`
 	4. Aika loppui
 	Osion lähteet(Karvinen 2022b)
