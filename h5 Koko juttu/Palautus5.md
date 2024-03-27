@@ -221,9 +221,9 @@ Tehtävänä oli asentaa vagrant ja asentaa sillä uusi virtuaalikone.(Karvinen 
 2. Käynnistin ladatun tiedoston `vagrant_2.4.1_windows_amd64` ja painelin kyllä ja next jokaiseen osioon, eli en tehnyt mitään muutoksia asennuksessa. Asennuksessa meni noin 5 minuuttia, jonka jälkeen käynnistin koneen uudestaan.
 
 3. Avasin windowsin powershellin ja kirjoitin komennot
-   > vagrant init debian/bookworm64
-   > vagrant up <- tässä osiossa meni noin kaksi minuuttia
-   > vagrant ssh
+   > vagrant init debian/bookworm64  
+   > vagrant up <- tässä osiossa meni noin kaksi minuuttia  
+   > vagrant ssh  
    ![m1.png](m1.png)  
 
 4. Avasin virtualboxin ja myös sinne oli ilmestynyt tämä virtuaalikone
