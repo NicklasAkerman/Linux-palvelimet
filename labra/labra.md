@@ -81,17 +81,17 @@ NicklasHH 2024. Viikon palautus 7. Luettavissa: https://github.com/NicklasHH/Lin
 
 
 
-**käyttäjätunnus: **nick  
+**käyttäjätunnus:** nick  
 Salasana: 2lfg99JkQ22_  
-  https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/?fromSearch=Final%20Lab%20for%20Linux%20Palvelimet%202024%20Spring
-**Tunnus: **Toinenuseri  
+
+**Tunnus:** Toinenuseri  
 Salasana: L.oPq323Al£aoo-!  
   
-**Tunnus: ** nickte01  
+**Tunnus:** nickte01  
 Salasana: L6nvj5UdyZGIhXXuKuSm  
   
-**Django admin: **nick  
+**Django admin:** nick  
 Salasana: dNF93CvRQbe5OcMnkMcj  
   
-**Django erkki: **Erkki  
+**Django erkki:** Erkki  
 Salasana: dNF93CvRQbe5OcMnkMcj  
